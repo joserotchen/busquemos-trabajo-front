@@ -1,0 +1,20 @@
+.hidden {
+	visibility: hidden;
+}
+
+.container {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.content-container {
+	width: 100%;
+	max-width: 1344px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}

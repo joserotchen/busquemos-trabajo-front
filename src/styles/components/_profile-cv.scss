@@ -1,0 +1,200 @@
+.profile-cv {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 80px;
+	gap: 130px;
+}
+
+.profile-cv-info {
+	width: 55%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.profile-cv-info-main {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 120px;
+	article {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
+	}
+}
+
+.profile-cv-info-main-photo {
+	width: 129px;
+	height: 129px;
+}
+
+.profile-cv-info-main-title {
+	h2 {
+		font-size: 41px;
+		font-weight: 700;
+		color: $color-blue-dark;
+		margin: 0;
+	}
+	h5 {
+		font-size: 20px;
+		font-weight: 400;
+		margin: 0;
+		color: $color-text;
+	}
+}
+
+.edit-btn {
+	width: 125px;
+	height: 46px;
+	border: none;
+	border-radius: 30px;
+	background-color: $color-blue-dark;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+}
+
+.profile-cv-info-bio {
+	margin-top: 50px;
+	p {
+		font-size: 20px;
+		font-weight: 400;
+		color: $color-text;
+	}
+}
+
+.profile-cv-info-skills {
+	margin-top: 50px;
+	h4 {
+		margin: 0;
+		font-size: 20px;
+		font-weight: 600;
+		color: $color-blue;
+		margin-bottom: 40px;
+	}
+	div {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		gap: 5px;
+		span {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			padding: 0 15px;
+			height: 38px;
+			border-radius: 40px;
+			background-color: $color-blue;
+			gap: 10px;
+			color: #ffffff;
+			button {
+				background-color: #ffffff;
+				border: none;
+				border-radius: 50%;
+				cursor: pointer;
+				font-family: inherit;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+}
+
+.add-tag-btn {
+	width: 200px;
+	height: 38px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 400;
+	border: solid 1px $color-blue-dark;
+	color: $color-blue-dark;
+	cursor: pointer;
+	font-family: inherit;
+	border-radius: 40px;
+	background-color: #ffffff;
+	gap: 4px;
+}
+
+// Profile Contact
+
+.profile-cv-contact {
+	width: 468px;
+	height: 484px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	border-radius: 30px;
+	margin-bottom: -200px;
+	padding-top: 20px;
+	padding-left: 90px;
+	padding-bottom: 50px;
+	padding-right: 20px;
+}
+
+.profile-cv-contact-edit {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.profile-cv-contact-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	h4 {
+		font-size: 22px;
+		font-weight: 700;
+		color: $color-text;
+		margin: 0;
+	}
+	span {
+		color: $color-text;
+		font-weight: 400;
+		margin: 0;
+		margin-bottom: 40px;
+		button {
+			width: 96px;
+			height: 35px;
+			border-radius: 31px;
+			background-color: $color-blue;
+			color: #ffffff;
+			border: none;
+			cursor: pointer;
+			font-size: 17px;
+			font-weight: 400;
+			font-family: inherit;
+			margin-left: 20px;
+		}
+	}
+}
+
+.profile-cv-contact-download {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 20px;
+	button {
+		width: 241px;
+		height: 52px;
+		border-radius: 31px;
+		background-color: $color-blue;
+		color: #ffffff;
+		border: none;
+		cursor: pointer;
+		font-size: 22px;
+		font-weight: 400;
+		font-family: inherit;
+	}
+}

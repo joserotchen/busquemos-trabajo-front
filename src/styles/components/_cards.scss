@@ -1,0 +1,86 @@
+.cards {
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 278px);
+	gap: 60px;
+	justify-content: center;
+}
+
+.card {
+	width: 278px;
+	height: 249px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 30px;
+}
+
+.card-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	h5 {
+		margin: 0;
+		font-size: 13px;
+		font-weight: 500;
+		color: $color-blue;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+	h3 {
+		margin: 0;
+		font-size: 18px;
+		font-weight: 700;
+		color: $color-blue-dark;
+		margin-bottom: 5px;
+	}
+}
+
+.more-info {
+	display: grid;
+	grid-template-columns: repeat(2, 140px);
+	gap: 10px;
+	margin-bottom: 30px;
+	span {
+		color: #707070;
+		font-size: 12px;
+		font-weight: 500;
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+	.info-date {
+		font-size: 12px;
+		font-weight: 500;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.card-action {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	button {
+		width: 95px;
+		height: 27px;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+		border-radius: 10px;
+		border: none;
+		background-color: $color-blue;
+		color: #ffffff;
+		font-size: 10px;
+		font-weight: 500;
+		font-family: inherit;
+		cursor: pointer;
+	}
+}
