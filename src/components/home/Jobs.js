@@ -5,42 +5,58 @@ const Jobs = () => {
 		<section className="jobs">
 			<div className="jobs-filter">
 				<h5>Tipo de Empleo</h5>
+
 				<div className="jobs-filter-checks">
 					<div>
-						<input id="t-contrato" type="checkbox" />
-						<label for="t-contrato"> Contrato</label>
+						<label class="container-input">
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+							Contrato
+						</label>
 					</div>
 					<span>1</span>
 				</div>
 
 				<div className="jobs-filter-checks">
 					<div>
-						<input id="t-tiempo-completo" type="checkbox" />
-						<label for="t-tiempo-completo"> Tiempo Completo</label>
+						<label class="container-input">
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+							Tiempo Completo
+						</label>
 					</div>
 					<span>4</span>
 				</div>
 
 				<div className="jobs-filter-checks">
 					<div>
-						<input id="t-part-time" type="checkbox" />
-						<label for="t-part-time"> Part Time</label>
+						<label class="container-input">
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+							Part Time
+						</label>
 					</div>
 					<span>2</span>
 				</div>
 
 				<div className="jobs-filter-checks">
 					<div>
-						<input id="t-remoto" type="checkbox" />
-						<label for="t-remoto"> Remoto</label>
+						<label class="container-input">
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+							Remoto
+						</label>
 					</div>
 					<span>1</span>
 				</div>
 
 				<div className="jobs-filter-checks">
 					<div>
-						<input id="t-practica" type="checkbox" />
-						<label for="t-practica"> Practica</label>
+						<label class="container-input">
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+							Practica
+						</label>
 					</div>
 					<span>0</span>
 				</div>
@@ -49,40 +65,55 @@ const Jobs = () => {
 
 				<div className="jobs-filter-checks">
 					<div>
-						<input id="n-junior" type="checkbox" />
-						<label for="n-junior"> Junior</label>
+						<label class="container-input">
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+							Junior
+						</label>
 					</div>
 					<span>4</span>
 				</div>
 
 				<div className="jobs-filter-checks">
 					<div>
-						<input id="n-semisenior" type="checkbox" />
-						<label for="n-semisenior"> Semisenior</label>
+						<label class="container-input">
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+							Semisenior
+						</label>
 					</div>
 					<span>2</span>
 				</div>
 
 				<div className="jobs-filter-checks">
 					<div>
-						<input id="n-senior" type="checkbox" />
-						<label for="n-senior"> Senior</label>
+						<label class="container-input">
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+							Senior
+						</label>
 					</div>
 					<span>1</span>
 				</div>
 
 				<div className="jobs-filter-checks">
 					<div>
-						<input id="n-sinexperiencia" type="checkbox" />
-						<label for="n-sinexperiencia"> Sin experiencia</label>
+						<label class="container-input">
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+							Sin experiencia
+						</label>
 					</div>
 					<span>1</span>
 				</div>
 
 				<div className="jobs-filter-checks">
 					<div>
-						<input id="n-ejecutivo" type="checkbox" />
-						<label for="n-ejecutivo"> Ejecutivo</label>
+						<label class="container-input">
+							<input type="checkbox" />
+							<span class="checkmark"></span>
+							Ejecutivo
+						</label>
 					</div>
 					<span>0</span>
 				</div>
