@@ -2,6 +2,7 @@ import Container from "../components/common/Container";
 import Image from "next/image";
 import imgLogin from "../../public/img/img-login.webp";
 import imgPassword from "../../public/img/show-password.webp";
+import Link from "next/link";
 
 const iniciarSesion = () => {
 	return (
@@ -21,7 +22,10 @@ const iniciarSesion = () => {
 							<input type="submit" value="Iniciar" />
 						</form>
 						<span>
-							¿No tienes una cuenta? <a href="#!">Regístrate</a>{" "}
+							¿No tienes una cuenta?
+							<Link href="/registrarse">
+								<a> Regístrate</a>
+							</Link>
 						</span>
 					</div>
 					<div className="login-image">

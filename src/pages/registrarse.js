@@ -2,6 +2,7 @@ import Container from "../components/common/Container";
 import Image from "next/image";
 import imgPassword from "../../public/img/show-password.webp";
 import imgSingup from "../../public/img/singup-img.webp";
+import Link from "next/link";
 
 const registrarse = () => {
 	return (
@@ -25,7 +26,10 @@ const registrarse = () => {
 							<input type="submit" value="Registrar" />
 						</form>
 						<span>
-							¿Tienes una cuenta? <a href="#!">Iniciar sesión</a>
+							¿Tienes una cuenta?{" "}
+							<Link href="/iniciar-sesion">
+								<a>Iniciar sesión</a>
+							</Link>
 						</span>
 					</div>
 					<div className="singup-img">

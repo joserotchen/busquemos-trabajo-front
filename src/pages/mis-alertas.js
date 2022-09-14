@@ -8,7 +8,7 @@ const misAlertas = () => {
 	return (
 		<Container>
 			<div className="content-container ">
-				<NavCv />
+				<NavCv page={"mis-alertas"} />
 				<section className="mis-alertas">
 					<h1>Mis Alertas</h1>
 					<article>

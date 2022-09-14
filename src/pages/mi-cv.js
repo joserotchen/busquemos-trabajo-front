@@ -7,7 +7,7 @@ const miCv = () => {
 	return (
 		<Container>
 			<div className="content-container ">
-				<NavCv />
+				<NavCv page={"mi-cv"} />
 				<ProfileCv />
 				<ExperienceCv />
 			</div>

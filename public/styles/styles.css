@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -312,6 +313,206 @@ body {
 }
 .mis-alertas article .slider.round:before {
   border-radius: 50%;
+}
+
+.mis-avisos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mis-avisos h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #1a374d;
+  margin: 0;
+  margin-top: 90px;
+  margin-bottom: 80px;
+}
+.mis-avisos .mis-avisos-select {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 60px;
+}
+.mis-avisos .mis-avisos-select select {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  color: #406882;
+}
+.mis-avisos article {
+  width: 1158px;
+  height: 231px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 30px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 30px;
+}
+.mis-avisos article .trash {
+  width: 54px;
+  height: 54px;
+  background-color: #1a374d;
+  font-family: inherit;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.mis-avisos article .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 722px;
+  margin-right: 300px;
+}
+.mis-avisos article .info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  color: #1a374d;
+  margin-bottom: 30px;
+}
+.mis-avisos article .info h5 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  color: #707070;
+  margin-bottom: 30px;
+}
+.mis-avisos article .info p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #707070;
+  margin: 0;
+}
+
+.mis-postulaciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mis-postulaciones h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #1a374d;
+  margin: 0;
+  margin-top: 90px;
+  margin-bottom: 80px;
+}
+.mis-postulaciones .mis-avisos-select {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 60px;
+}
+.mis-postulaciones .mis-avisos-select select {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  color: #406882;
+}
+.mis-postulaciones article {
+  width: 1158px;
+  height: 258px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 30px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 30px;
+}
+.mis-postulaciones article .data {
+  width: 450px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.mis-postulaciones article .data h3 {
+  color: #1a374d;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.mis-postulaciones article .data h6 {
+  color: #707070;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 25px;
+}
+.mis-postulaciones article .data h5 {
+  color: #1a374d;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 25px;
+}
+.mis-postulaciones article .data span {
+  color: #ffffff;
+  border-radius: 30px;
+  background-color: #1a374d;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+.mis-postulaciones article .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1000px;
+  margin-right: 300px;
+}
+.mis-postulaciones article .info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  color: #1a374d;
+  margin-bottom: 30px;
+}
+.mis-postulaciones article .info h5 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  color: #707070;
+  margin-bottom: 30px;
+}
+.mis-postulaciones article .info p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #707070;
+  margin: 0;
+}
+
+.configuración {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.configuración h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #1a374d;
+  margin: 0;
+  margin-top: 90px;
+  margin-bottom: 80px;
 }
 
 header {
