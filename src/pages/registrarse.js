@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const registrarse = () => {
 	return (
-		<Container>
+		<div className="container">
 			<div className="content-container ">
 				<section className="singup">
 					<div className="singup-form">
@@ -37,7 +37,7 @@ const registrarse = () => {
 					</div>
 				</section>
 			</div>
-		</Container>
+		</div>
 	);
 };
 

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const iniciarSesion = () => {
 	return (
-		<Container>
+		<div className="container">
 			<div className="content-container ">
 				<section className="login">
 					<div className="login-form">
@@ -33,7 +33,7 @@ const iniciarSesion = () => {
 					</div>
 				</section>
 			</div>
-		</Container>
+		</div>
 	);
 };
 
