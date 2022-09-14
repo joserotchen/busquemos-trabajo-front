@@ -1,8 +1,10 @@
 import Image from "next/image";
 import editImg from "../../../public/img/edit-img.png";
 import iconImg from "../../../public/img/icon.png";
+import { useEffect } from "react";
 
-const ExperienceCv = () => {
+const ExperienceCv = ({ page }) => {
+	useEffect(() => {}, [page]);
 	return (
 		<section className="experience-cv">
 			<div className="experience-cv-experience">
@@ -18,9 +20,11 @@ const ExperienceCv = () => {
 								<div>
 									<span>05/2020 - Presente</span>{" "}
 								</div>
-								<button className="edit-btn">
-									<Image src={editImg} /> Editar
-								</button>
+								{page === "perfil-candidato" ? null : (
+									<button className="edit-btn">
+										<Image src={editImg} /> Editar
+									</button>
+								)}
 							</div>
 							<div className="experience-item-description">
 								<h4>Desarrollador Fullstack</h4>
@@ -43,9 +47,11 @@ const ExperienceCv = () => {
 								<div>
 									<span>05/2020 - Presente</span>{" "}
 								</div>
-								<button className="edit-btn">
-									<Image src={editImg} /> Editar
-								</button>
+								{page === "perfil-candidato" ? null : (
+									<button className="edit-btn">
+										<Image src={editImg} /> Editar
+									</button>
+								)}
 							</div>
 							<div className="experience-item-description">
 								<h4>Desarrollador Fullstack</h4>
@@ -68,9 +74,11 @@ const ExperienceCv = () => {
 								<div>
 									<span>05/2020 - Presente</span>{" "}
 								</div>
-								<button className="edit-btn">
-									<Image src={editImg} /> Editar
-								</button>
+								{page === "perfil-candidato" ? null : (
+									<button className="edit-btn">
+										<Image src={editImg} /> Editar
+									</button>
+								)}
 							</div>
 							<div className="experience-item-description">
 								<h4>Desarrollador Fullstack</h4>
@@ -97,9 +105,11 @@ const ExperienceCv = () => {
 								<div>
 									<span>06/2015 - 03/2019</span>{" "}
 								</div>
-								<button className="edit-btn">
-									<Image src={editImg} /> Editar
-								</button>
+								{page === "perfil-candidato" ? null : (
+									<button className="edit-btn">
+										<Image src={editImg} /> Editar
+									</button>
+								)}
 							</div>
 							<div className="experience-item-description">
 								<h4>Ingeniero en informática</h4>

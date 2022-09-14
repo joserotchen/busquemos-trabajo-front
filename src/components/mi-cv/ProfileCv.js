@@ -3,8 +3,11 @@ import profileImg from "../../../public/img/profile-img.png";
 import trashImg from "../../../public/img/trash-img.png";
 import editImg from "../../../public/img/edit-img.png";
 import tagImg from "../../../public/img/tag-img.png";
+import { useEffect } from "react";
 
-const ProfileCv = () => {
+const ProfileCv = ({ page }) => {
+	useEffect(() => {}, [page]);
+
 	return (
 		<section className="profile-cv">
 			<div className="profile-cv-info">
@@ -19,9 +22,11 @@ const ProfileCv = () => {
 						</div>
 					</article>
 					<article>
-						<button className="edit-btn">
-							<Image src={editImg} /> Editar
-						</button>
+						{page === "perfil-candidato" ? null : (
+							<button className="edit-btn">
+								<Image src={editImg} /> Editar
+							</button>
+						)}
 					</article>
 				</div>
 				<div className="profile-cv-info-bio">
@@ -79,17 +84,21 @@ const ProfileCv = () => {
 								<Image src={trashImg} />
 							</button>
 						</span>
-						<button className="add-tag-btn">
-							<Image src={tagImg} /> agregar tag
-						</button>
+						{page === "perfil-candidato" ? null : (
+							<button className="add-tag-btn">
+								<Image src={tagImg} /> agregar tag
+							</button>
+						)}
 					</div>
 				</div>
 			</div>
 			<div className="profile-cv-contact">
 				<div className="profile-cv-contact-edit">
-					<button className="edit-btn">
-						<Image src={editImg} /> Editar
-					</button>
+					{page === "perfil-candidato" ? null : (
+						<button className="edit-btn">
+							<Image src={editImg} /> Editar
+						</button>
+					)}
 				</div>
 				<div className="profile-cv-contact-info">
 					<h4>Correo electrónico:</h4>

@@ -2,8 +2,8 @@
 	width: 100%;
 	height: auto;
 	display: grid;
-	grid-template-columns: repeat(2, 278px);
-	gap: 70px;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
 }
 
 .card {

@@ -1,0 +1,57 @@
+.postulantes-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1233px;
+	height: 83px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	border-radius: 61px;
+	gap: 20px;
+	padding: 0 10px;
+	.separator {
+		height: 60%;
+		width: 1px;
+		background-color: $color-text;
+	}
+	div {
+		width: 25%;
+		height: 80%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		input {
+			height: 100%;
+			width: 90%;
+			border: none;
+			border-radius: 61px;
+			font-size: 20px;
+			font-weight: 500;
+			color: $color-text;
+			padding: 0 10px;
+		}
+	}
+	select {
+		width: 25%;
+		height: 80%;
+		border: none;
+		border-radius: 61px;
+		background-color: transparent;
+		font-size: 20px;
+		font-weight: 500;
+		color: $color-text;
+		padding: 1rem;
+	}
+	button {
+		width: 25%;
+		height: 80%;
+		border: none;
+		border-radius: 61px;
+		background-color: transparent;
+		font-size: 20px;
+		font-weight: 500;
+		color: #ffff;
+		cursor: pointer;
+		background-color: #406882;
+	}
+}

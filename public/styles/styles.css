@@ -517,6 +517,22 @@ body {
   margin-bottom: 80px;
 }
 
+.postulantes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.postulantes h1 {
+  color: #1a374d;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
 header {
   width: 100%;
   display: flex;
@@ -737,7 +753,6 @@ header {
 }
 
 .jobs-results-nav {
-  width: 626px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -762,8 +777,8 @@ header {
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(2, 278px);
-  gap: 70px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
 
 .card {
@@ -1197,6 +1212,64 @@ footer {
 }
 footer p {
   font-family: inherit;
+}
+
+.postulantes-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1233px;
+  height: 83px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 61px;
+  gap: 20px;
+  padding: 0 10px;
+}
+.postulantes-form .separator {
+  height: 60%;
+  width: 1px;
+  background-color: #707070;
+}
+.postulantes-form div {
+  width: 25%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.postulantes-form div input {
+  height: 100%;
+  width: 90%;
+  border: none;
+  border-radius: 61px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #707070;
+  padding: 0 10px;
+}
+.postulantes-form select {
+  width: 25%;
+  height: 80%;
+  border: none;
+  border-radius: 61px;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  color: #707070;
+  padding: 1rem;
+}
+.postulantes-form button {
+  width: 25%;
+  height: 80%;
+  border: none;
+  border-radius: 61px;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  background-color: #406882;
 }
 
 /*# sourceMappingURL=styles.css.map */

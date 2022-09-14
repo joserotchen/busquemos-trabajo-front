@@ -1,0 +1,15 @@
+.postulantes {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	h1 {
+		color: $color-blue-dark;
+		font-size: 35px;
+		font-weight: 700;
+		margin: 0;
+		margin-top: 100px;
+		margin-bottom: 60px;
+	}
+}
