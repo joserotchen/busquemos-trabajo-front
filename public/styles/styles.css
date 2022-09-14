@@ -725,14 +725,6 @@ header {
   gap: 20px;
   align-items: center;
 }
-.jobs-filter-checks input {
-  width: 29px;
-  height: 29px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  border-radius: 5px;
-  background-color: #ffffff;
-  margin: 0;
-}
 .jobs-filter-checks label {
   font-size: 18px;
   height: 25px;

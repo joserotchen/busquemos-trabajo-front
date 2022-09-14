@@ -42,6 +42,12 @@
 		align-items: center;
 	}
 
+	label {
+		font-size: 18px;
+		height: 25px;
+		color: $color-text;
+		margin: 0;
+	}
 	span {
 		font-size: 18px;
 		color: $color-text;
