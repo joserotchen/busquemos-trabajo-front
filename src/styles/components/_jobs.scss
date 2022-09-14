@@ -3,7 +3,8 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
-	gap: 70px;
+	gap: 80px;
+	margin-top: 160px;
 }
 
 .jobs-filter {
@@ -12,16 +13,19 @@
 	align-items: flex-start;
 	justify-content: center;
 	width: 440px;
-	height: 644px;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-	border-radius: 30px;
-	padding: 2rem;
+	border-radius: 10px;
+	padding: 0 45px;
 	h5 {
 		color: $color-blue-dark;
 		font-size: 20px;
 		font-weight: 800;
 		margin: 0;
-		margin-bottom: 25px;
+		margin-bottom: 40px;
+		margin-top: 25px;
+	}
+	.second-title {
+		margin-top: 5px;
 	}
 }
 
@@ -30,10 +34,11 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+
 	div {
 		display: flex;
-		gap: 10px;
+		gap: 20px;
 		align-items: center;
 	}
 	input {
@@ -42,39 +47,45 @@
 		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 		border-radius: 5px;
 		background-color: #ffffff;
+		margin: 0;
 	}
 	label {
 		font-size: 18px;
 		height: 25px;
 		color: $color-text;
+		margin: 0;
 	}
 	span {
 		font-size: 18px;
 		color: $color-text;
+		margin: 0;
 	}
 }
 
 // RESULTS
 
 .jobs-results {
-	width: 638px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+	width: 100%;
 }
 
 .jobs-results-nav {
+	width: 626px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	height: 100px;
 	h4 {
 		color: $color-blue-dark;
 		font-size: 20px;
 		font-weight: 800;
+		margin: 0;
 	}
 	select {
 		border: none;
-		color: #406882;
+		color: $color-blue;
 		font-family: inherit;
 		font-size: 20px;
 		background-color: #fff;

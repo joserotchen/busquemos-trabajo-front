@@ -45,7 +45,7 @@ const Jobs = () => {
 					<span>0</span>
 				</div>
 
-				<h5>Nivel de experiencia</h5>
+				<h5 className="second-title">Nivel de experiencia</h5>
 
 				<div className="jobs-filter-checks">
 					<div>

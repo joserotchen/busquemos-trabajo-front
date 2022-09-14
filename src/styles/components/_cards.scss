@@ -3,8 +3,7 @@
 	height: auto;
 	display: grid;
 	grid-template-columns: repeat(2, 278px);
-	gap: 60px;
-	justify-content: center;
+	gap: 70px;
 }
 
 .card {
@@ -16,7 +15,7 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
-	padding: 30px;
+	padding: 25px;
 }
 
 .card-info {
@@ -46,9 +45,9 @@
 
 .more-info {
 	display: grid;
-	grid-template-columns: repeat(2, 140px);
-	gap: 10px;
+	grid-template-columns: repeat(2, 1fr);
 	margin-bottom: 30px;
+	gap: 10px;
 	span {
 		color: #707070;
 		font-size: 12px;
@@ -63,6 +62,9 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		grid-column: 1/3;
+		display: flex;
+		justify-content: flex-start;
 	}
 }
 
@@ -70,6 +72,7 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	button {
 		width: 95px;
 		height: 27px;

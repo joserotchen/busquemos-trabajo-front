@@ -26,7 +26,10 @@ const Card = ({ type, title, location, experience, date, logo }) => {
 			</div>
 			<div className="card-action">
 				<button>Ver oferta</button>
-				<div>Logo</div>
+				<div>
+					{" "}
+					<Image src={logo} />
+				</div>
 			</div>
 		</article>
 	);

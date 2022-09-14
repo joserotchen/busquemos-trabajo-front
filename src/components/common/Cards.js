@@ -1,4 +1,5 @@
 import Card from "./Card";
+import googleLogo from "../../../public/img/google-logo.png";
 
 const Cards = () => {
 	return (
@@ -9,7 +10,7 @@ const Cards = () => {
 				location="Santiago, CL"
 				experience="Semisenior"
 				date="6 Septiembre, 2022"
-				logo="G"
+				logo={googleLogo}
 			/>
 			<Card
 				type="Informática"
@@ -17,7 +18,7 @@ const Cards = () => {
 				location="Santiago, CL"
 				experience="Semisenior"
 				date="6 Septiembre, 2022"
-				logo="G"
+				logo={googleLogo}
 			/>
 			<Card
 				type="Informática"
@@ -25,7 +26,7 @@ const Cards = () => {
 				location="Santiago, CL"
 				experience="Semisenior"
 				date="6 Septiembre, 2022"
-				logo="G"
+				logo={googleLogo}
 			/>
 			<Card
 				type="Informática"
@@ -33,7 +34,7 @@ const Cards = () => {
 				location="Santiago, CL"
 				experience="Semisenior"
 				date="6 Septiembre, 2022"
-				logo="G"
+				logo={googleLogo}
 			/>
 			<Card
 				type="Informática"
@@ -41,7 +42,7 @@ const Cards = () => {
 				location="Santiago, CL"
 				experience="Semisenior"
 				date="6 Septiembre, 2022"
-				logo="G"
+				logo={googleLogo}
 			/>
 			<Card
 				type="Informática"
@@ -49,7 +50,7 @@ const Cards = () => {
 				location="Santiago, CL"
 				experience="Semisenior"
 				date="6 Septiembre, 2022"
-				logo="G"
+				logo={googleLogo}
 			/>
 		</div>
 	);
