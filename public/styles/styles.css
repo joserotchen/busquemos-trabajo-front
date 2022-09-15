@@ -665,6 +665,9 @@ header {
   justify-content: flex-start;
   padding: 1rem;
 }
+.hero-home__main form input:focus {
+  outline: none;
+}
 .hero-home__main form .separator {
   width: 1px;
   height: 60%;
@@ -1330,6 +1333,9 @@ footer p {
   font-weight: 500;
   color: #707070;
   padding: 0 10px;
+}
+.postulantes-form div input:focus {
+  outline: none;
 }
 .postulantes-form select {
   width: 25%;

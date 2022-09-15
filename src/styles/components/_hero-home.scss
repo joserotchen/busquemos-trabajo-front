@@ -79,6 +79,9 @@
 			justify-content: flex-start;
 			padding: 1rem;
 		}
+		input:focus {
+			outline: none;
+		}
 		.separator {
 			width: 1px;
 			height: 60%;
