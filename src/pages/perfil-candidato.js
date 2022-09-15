@@ -1,13 +1,13 @@
 import Container from "../components/common/Container";
-import ProfileCv from "../components/mi-cv/ProfileCv";
-import ExperienceCv from "../components/mi-cv/ExperienceCv";
+import ProfileCvCandidato from "../components/perfil-candidato/ProfileCvCandidato";
+import ExperienceCvCandidato from "../components/perfil-candidato/ExperienceCvCandidato";
 
 const perfilCandidato = () => {
 	return (
 		<Container>
 			<div className="content-container ">
-				<ProfileCv page={"perfil-candidato"} />
-				<ExperienceCv page={"perfil-candidato"} />
+				<ProfileCvCandidato />
+				<ExperienceCvCandidato />
 			</div>
 		</Container>
 	);
