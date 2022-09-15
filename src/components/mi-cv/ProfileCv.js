@@ -40,50 +40,114 @@ const ProfileCv = ({ page }) => {
 				</div>
 				<div className="profile-cv-info-skills">
 					<h4>Habilidades</h4>
-					<div>
-						<span>
-							React{" "}
-							<button>
-								<Image src={trashImg} />
-							</button>
-						</span>
-						<span>
-							Javascript{" "}
-							<button>
-								{" "}
-								<Image src={trashImg} />
-							</button>
-						</span>
-						<span>
-							PHP{" "}
-							<button>
-								<Image src={trashImg} />
-							</button>
-						</span>
-						<span>
-							Cryptro{" "}
-							<button>
-								<Image src={trashImg} />
-							</button>
-						</span>
-						<span>
-							Web{" "}
-							<button>
-								<Image src={trashImg} />
-							</button>
-						</span>
-						<span>
-							Senior{" "}
-							<button>
-								<Image src={trashImg} />
-							</button>
-						</span>
-						<span>
-							Web3{" "}
-							<button>
-								<Image src={trashImg} />
-							</button>
-						</span>
+					<div className="container-skills">
+						<div>
+							<span>
+								React{" "}
+								{page === "perfil-candidato" ? (
+									<button
+										style={{
+											backgroundColor: " #406882",
+											zIndex: "-1",
+										}}
+									></button>
+								) : (
+									<button>
+										<Image src={trashImg} />
+									</button>
+								)}
+							</span>
+							<span>
+								Javascript{" "}
+								{page === "perfil-candidato" ? (
+									<button
+										style={{
+											backgroundColor: " #406882",
+											zIndex: "-1",
+										}}
+									></button>
+								) : (
+									<button>
+										<Image src={trashImg} />
+									</button>
+								)}
+							</span>
+							<span>
+								PHP{" "}
+								{page === "perfil-candidato" ? (
+									<button
+										style={{
+											backgroundColor: " #406882",
+											zIndex: "-1",
+										}}
+									></button>
+								) : (
+									<button>
+										<Image src={trashImg} />
+									</button>
+								)}
+							</span>
+							<span>
+								Cryptro{" "}
+								{page === "perfil-candidato" ? (
+									<button
+										style={{
+											backgroundColor: " #406882",
+											zIndex: "-1",
+										}}
+									></button>
+								) : (
+									<button>
+										<Image src={trashImg} />
+									</button>
+								)}
+							</span>
+							<span>
+								Web{" "}
+								{page === "perfil-candidato" ? (
+									<button
+										style={{
+											backgroundColor: " #406882",
+											zIndex: "-1",
+										}}
+									></button>
+								) : (
+									<button>
+										<Image src={trashImg} />
+									</button>
+								)}
+							</span>
+							<span>
+								Senior{" "}
+								{page === "perfil-candidato" ? (
+									<button
+										style={{
+											backgroundColor: " #406882",
+											zIndex: "-1",
+										}}
+									></button>
+								) : (
+									<button>
+										<Image src={trashImg} />
+									</button>
+								)}
+							</span>
+							<span>
+								Web3{" "}
+								{page === "perfil-candidato" ? (
+									<button
+										style={{
+											backgroundColor: " #406882",
+											zIndex: "-1",
+										}}
+									></button>
+								) : (
+									<button>
+										<Image src={trashImg} />
+									</button>
+								)}
+							</span>
+						</div>
 						{page === "perfil-candidato" ? null : (
 							<button className="add-tag-btn">
 								<Image src={tagImg} /> agregar tag

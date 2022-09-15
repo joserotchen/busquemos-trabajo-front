@@ -45,7 +45,7 @@ const ExperienceCv = ({ page }) => {
 						<div>
 							<div className="experience-item-main">
 								<div>
-									<span>05/2020 - Presente</span>{" "}
+									<span>04/2019 - 03/2020</span>{" "}
 								</div>
 								{page === "perfil-candidato" ? null : (
 									<button className="edit-btn">
@@ -72,7 +72,7 @@ const ExperienceCv = ({ page }) => {
 						<div>
 							<div className="experience-item-main">
 								<div>
-									<span>05/2020 - Presente</span>{" "}
+									<span>06/2015 - 03/2019</span>{" "}
 								</div>
 								{page === "perfil-candidato" ? null : (
 									<button className="edit-btn">
