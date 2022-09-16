@@ -4,13 +4,13 @@
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
-	margin-top: 80px;
+	margin-top: 70px;
 	h2 {
 		margin: 0;
 		color: $color-blue-dark;
 		font-size: 35px;
 		font-weight: 700;
-		margin-bottom: 55px;
+		margin-bottom: 40px;
 	}
 }
 
@@ -57,7 +57,7 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 45px;
-	margin-top: 35px;
+	margin-top: 25px;
 	article {
 		display: flex;
 		flex-direction: column;
@@ -69,7 +69,7 @@
 			font-size: 18px;
 			font-weight: 600;
 			margin: 0;
-			margin-bottom: 40px;
+			margin-bottom: 20px;
 		}
 		a {
 			text-decoration: none;
@@ -81,7 +81,7 @@
 			align-items: center;
 			gap: 7px;
 			margin: 0;
-			margin-bottom: 25px;
+			margin-bottom: 20px;
 			.icon-list {
 				.first {
 					background-color: $color-text;

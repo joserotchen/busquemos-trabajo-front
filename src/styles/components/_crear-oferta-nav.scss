@@ -1,0 +1,35 @@
+.crear-oferta-nav {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		color: $color-text;
+		font-size: 18px;
+		font-weight: 700;
+		gap: 5px;
+		div {
+			width: 54px;
+			height: 54px;
+			background-color: $color-text;
+			color: #ffffff;
+			font-family: inherit;
+			font-size: 18px;
+			font-weight: 700;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+		}
+		.icon {
+			background-color: transparent;
+			width: 10px;
+			height: 10px;
+		}
+	}
+}
