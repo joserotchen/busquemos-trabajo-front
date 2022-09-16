@@ -1,6 +1,7 @@
 import Image from "next/image";
 import heroImage from "../../../public/img/img-hero-home.png";
-import serachImg from "../../../public/img/search-img.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 const HeroHome = () => {
 	return (
@@ -8,12 +9,12 @@ const HeroHome = () => {
 			<div className="hero-home__main">
 				<h3>Encuentra un buen trabajo que te acomoda</h3>
 				<h5>Busca tu oportunidad laboral</h5>
-				<form autocomplete="on">
+				<form autoComplete="on">
 					<input type="text" placeholder="Buscar empleo" />
 					<div className="separator"></div>
 					<input type="text" placeholder="Ubicaciones" />
 					<button>
-						<Image src={serachImg} />
+						<FontAwesomeIcon icon={faMagnifyingGlass} />
 					</button>
 				</form>
 				<h4>Palabras Populares</h4>

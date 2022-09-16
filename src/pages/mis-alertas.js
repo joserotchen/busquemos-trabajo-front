@@ -1,8 +1,8 @@
 import Container from "../components/common/Container";
 import NavCv from "../components/mi-cv/NavCv";
-import Image from "next/image";
-import editImg from "../../public/img/edit-img.png";
-import trashImg from "../../public/img/trash-2-img.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPen } from "@fortawesome/free-solid-svg-icons";
+import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
 const misAlertas = () => {
 	return (
@@ -29,10 +29,10 @@ const misAlertas = () => {
 						</div>
 						<div className="btns">
 							<button>
-								<Image src={editImg} />{" "}
+								<FontAwesomeIcon icon={faPen} />{" "}
 							</button>
 							<button>
-								<Image src={trashImg} />
+								<FontAwesomeIcon icon={faTrashCan} />
 							</button>
 						</div>
 					</article>
@@ -55,10 +55,10 @@ const misAlertas = () => {
 						</div>
 						<div className="btns">
 							<button>
-								<Image src={editImg} />{" "}
+								<FontAwesomeIcon icon={faPen} />{" "}
 							</button>
 							<button>
-								<Image src={trashImg} />
+								<FontAwesomeIcon icon={faTrashCan} />
 							</button>
 						</div>
 					</article>

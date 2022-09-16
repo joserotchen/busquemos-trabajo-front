@@ -1,10 +1,24 @@
 import Container from "../components/common/Container";
 import Image from "next/image";
 import imgLogin from "../../public/img/img-login.webp";
-import imgPassword from "../../public/img/show-password.webp";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { useRef } from "react";
 
 const iniciarSesion = () => {
+	const inputPassword = useRef();
+	const showPassword = (e) => {
+		e.preventDefault();
+		const type = inputPassword.current.getAttribute("type");
+
+		if (type === "text") {
+			inputPassword.current.setAttribute("type", "password");
+		} else {
+			inputPassword.current.setAttribute("type", "text");
+		}
+	};
+
 	return (
 		<div className="container">
 			<div className="content-container ">
@@ -14,9 +28,13 @@ const iniciarSesion = () => {
 						<form>
 							<input type="text" placeholder="Correo electrónico" />
 							<div className="show-password">
-								<input type="password" placeholder="Contraseña" />
-								<button>
-									<Image src={imgPassword} />
+								<input
+									type="password"
+									placeholder="Contraseña"
+									ref={inputPassword}
+								/>
+								<button onClick={showPassword}>
+									<FontAwesomeIcon icon={faEyeSlash} />
 								</button>
 							</div>
 							<input type="submit" value="Iniciar" />

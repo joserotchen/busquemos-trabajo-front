@@ -1,9 +1,10 @@
 import Image from "next/image";
 import profileImg from "../../../public/img/profile-img.png";
-import trashImg from "../../../public/img/trash-img.png";
-import editImg from "../../../public/img/edit-img.png";
 import tagImg from "../../../public/img/tag-img.png";
 import { useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPen } from "@fortawesome/free-solid-svg-icons";
+import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
 const ProfileCv = ({ page }) => {
 	useEffect(() => {}, [page]);
@@ -24,7 +25,7 @@ const ProfileCv = ({ page }) => {
 					<article>
 						{page === "perfil-candidato" ? null : (
 							<button className="edit-btn">
-								<Image src={editImg} /> Editar
+								<FontAwesomeIcon icon={faPen} /> Editar
 							</button>
 						)}
 					</article>
@@ -53,7 +54,7 @@ const ProfileCv = ({ page }) => {
 									></button>
 								) : (
 									<button>
-										<Image src={trashImg} />
+										<FontAwesomeIcon icon={faTrashCan} />
 									</button>
 								)}
 							</span>
@@ -68,7 +69,7 @@ const ProfileCv = ({ page }) => {
 									></button>
 								) : (
 									<button>
-										<Image src={trashImg} />
+										<FontAwesomeIcon icon={faTrashCan} />
 									</button>
 								)}
 							</span>
@@ -83,7 +84,7 @@ const ProfileCv = ({ page }) => {
 									></button>
 								) : (
 									<button>
-										<Image src={trashImg} />
+										<FontAwesomeIcon icon={faTrashCan} />
 									</button>
 								)}
 							</span>
@@ -98,7 +99,7 @@ const ProfileCv = ({ page }) => {
 									></button>
 								) : (
 									<button>
-										<Image src={trashImg} />
+										<FontAwesomeIcon icon={faTrashCan} />
 									</button>
 								)}
 							</span>
@@ -113,7 +114,7 @@ const ProfileCv = ({ page }) => {
 									></button>
 								) : (
 									<button>
-										<Image src={trashImg} />
+										<FontAwesomeIcon icon={faTrashCan} />
 									</button>
 								)}
 							</span>
@@ -128,7 +129,7 @@ const ProfileCv = ({ page }) => {
 									></button>
 								) : (
 									<button>
-										<Image src={trashImg} />
+										<FontAwesomeIcon icon={faTrashCan} />
 									</button>
 								)}
 							</span>
@@ -143,7 +144,7 @@ const ProfileCv = ({ page }) => {
 									></button>
 								) : (
 									<button>
-										<Image src={trashImg} />
+										<FontAwesomeIcon icon={faTrashCan} />
 									</button>
 								)}
 							</span>
@@ -160,7 +161,7 @@ const ProfileCv = ({ page }) => {
 				<div className="profile-cv-contact-edit">
 					{page === "perfil-candidato" ? null : (
 						<button className="edit-btn">
-							<Image src={editImg} /> Editar
+							<FontAwesomeIcon icon={faPen} /> Editar
 						</button>
 					)}
 				</div>

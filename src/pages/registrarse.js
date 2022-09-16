@@ -1,10 +1,24 @@
 import Container from "../components/common/Container";
 import Image from "next/image";
-import imgPassword from "../../public/img/show-password.webp";
 import imgSingup from "../../public/img/singup-img.webp";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { useRef } from "react";
 
 const registrarse = () => {
+	const inputPassword = useRef();
+	const showPassword = (e) => {
+		e.preventDefault();
+		const type = inputPassword.current.getAttribute("type");
+
+		if (type === "text") {
+			inputPassword.current.setAttribute("type", "password");
+		} else {
+			inputPassword.current.setAttribute("type", "text");
+		}
+	};
+
 	return (
 		<div className="container">
 			<div className="content-container ">
@@ -18,9 +32,13 @@ const registrarse = () => {
 							</div>
 							<input type="email" placeholder="Correo electrónico" />
 							<div className="show-password">
-								<input type="password" placeholder="Crear nueva contraseña" />
-								<button>
-									<Image src={imgPassword} />
+								<input
+									type="password"
+									placeholder="Crear nueva contraseña"
+									ref={inputPassword}
+								/>
+								<button onClick={showPassword}>
+									<FontAwesomeIcon icon={faEyeSlash} />
 								</button>
 							</div>
 							<input type="submit" value="Registrar" />

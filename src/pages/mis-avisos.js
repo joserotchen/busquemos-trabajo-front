@@ -1,7 +1,7 @@
 import Container from "../components/common/Container";
 import NavCv from "../components/mi-cv/NavCv";
-import Image from "next/image";
-import trashImg from "../../public/img/trash-2-img.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
 const misAvisos = () => {
 	return (
@@ -25,7 +25,7 @@ const misAvisos = () => {
 							</p>
 						</div>
 						<div className="trash">
-							<Image src={trashImg} />
+							<FontAwesomeIcon icon={faTrashCan} />
 						</div>
 					</article>
 					<article>
@@ -38,7 +38,7 @@ const misAvisos = () => {
 							</p>
 						</div>
 						<div className="trash">
-							<Image src={trashImg} />
+							<FontAwesomeIcon icon={faTrashCan} />
 						</div>
 					</article>
 				</section>

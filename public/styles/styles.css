@@ -84,8 +84,10 @@ body {
   cursor: pointer;
   background-color: transparent;
   border: none;
-  margin-left: -2.2rem;
-  margin-bottom: -0.4rem;
+  margin-left: -2rem;
+  margin-bottom: -0.3rem;
+  color: #707070;
+  font-size: 1rem;
 }
 .login-form form input {
   width: 432px;
@@ -169,8 +171,10 @@ body {
   cursor: pointer;
   background-color: transparent;
   border: none;
-  margin-left: -2.2rem;
-  margin-bottom: -0.4rem;
+  margin-left: -2rem;
+  margin-bottom: -0.3rem;
+  font-size: 1rem;
+  color: #707070;
 }
 .singup-form form input {
   width: 432px;
@@ -178,7 +182,7 @@ body {
   border-radius: 8px;
   border: 2px solid #1a374d;
   padding: 0 1rem;
-  color: rgba(64, 104, 130, 0.52);
+  color: #707070;
   font-size: 15px;
   font-weight: 500;
   font-family: inherit;
@@ -256,6 +260,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.mis-alertas article .btns button svg {
+  font-size: 1.5rem;
+  color: #fff;
 }
 .mis-alertas article h5 {
   font-size: 21px;
@@ -370,6 +378,10 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+.mis-avisos article .trash svg {
+  color: white;
+  font-size: 1.5rem;
 }
 .mis-avisos article .info {
   display: flex;
@@ -507,6 +519,7 @@ body {
 }
 
 .configuración {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -519,6 +532,34 @@ body {
   margin: 0;
   margin-top: 90px;
   margin-bottom: 80px;
+}
+
+.configuracion-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.configuracion-nav {
+  width: 279px;
+  height: 254px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.configuracion-nav button {
+  color: #406882;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .postulantes {
@@ -680,6 +721,8 @@ header {
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  color: #fff;
+  font-size: 2rem;
 }
 
 .hero-home__img {
@@ -879,6 +922,10 @@ header {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 .card-info h3 {
   margin: 0;
@@ -901,6 +948,9 @@ header {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+.more-info span svg {
+  color: #406882;
 }
 .more-info .info-date {
   font-size: 12px;
@@ -1035,6 +1085,9 @@ header {
   gap: 10px;
   cursor: pointer;
 }
+.edit-btn svg {
+  font-size: 1rem;
+}
 
 .profile-cv-info-bio {
   margin-top: 50px;
@@ -1075,14 +1128,17 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 5px;
+  padding-left: 20px;
+  padding-right: 7px;
   height: 38px;
   border-radius: 40px;
   background-color: #406882;
   gap: 10px;
   color: #ffffff;
   margin: 0;
+}
+.profile-cv-info-skills div span svg {
+  color: #406882;
 }
 .profile-cv-info-skills div span button {
   background-color: #ffffff;
@@ -1094,8 +1150,8 @@ header {
   justify-content: center;
   align-items: center;
   margin: 0;
-  width: 70%;
-  height: 70%;
+  width: 30px;
+  height: 30px;
 }
 
 .add-tag-btn {
@@ -1113,6 +1169,9 @@ header {
   border-radius: 40px;
   background-color: #ffffff;
   gap: 4px;
+}
+.add-tag-btn svg {
+  color: #406882;
 }
 
 .profile-cv-contact {
@@ -1218,6 +1277,7 @@ header {
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+  position: relative;
 }
 .experience-item .icon {
   margin-top: 0.7rem;
@@ -1226,6 +1286,23 @@ header {
   justify-content: center;
   align-items: center;
   width: 50px;
+}
+.experience-item .icon span {
+  width: 30px;
+  height: 30px;
+  background-color: #406882;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.experience-item .icon span span {
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  z-index: 100;
+  border-radius: 50%;
 }
 
 .experience-item-main {
@@ -1291,6 +1368,20 @@ header {
   color: #406882;
 }
 
+.experience-item::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: calc(100% + 30px);
+  right: 658px;
+  top: 30px;
+  background: #999;
+}
+
+.experience-item-last::before {
+  display: none;
+}
+
 footer {
   background-color: #d2d2d2;
   height: 100px;
@@ -1351,6 +1442,9 @@ footer p {
   font-weight: 500;
   color: #707070;
   padding: 1rem;
+}
+.postulantes-form select:focus {
+  outline: none;
 }
 .postulantes-form button {
   width: 25%;
@@ -1605,6 +1699,168 @@ footer p {
   gap: 10px;
   color: #ffffff;
   margin: 0;
+}
+
+.info-home {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 150px;
+  gap: 10px;
+}
+
+.info-home-img {
+  width: 817px;
+  height: 543px;
+}
+
+.info-home-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.info-home-info h2 {
+  color: #1a374d;
+  font-size: 35px;
+  font-weight: 700;
+  width: 500px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.info-home-info h5 {
+  color: #707070;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  width: 638px;
+  margin: 0;
+  margin-bottom: 35px;
+}
+.info-home-info ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  list-style: none;
+  gap: 40px;
+}
+.info-home-info ul li {
+  color: #707070;
+  font-size: 18px;
+}
+.info-home-info ul li span {
+  color: #1a374d;
+  font-weight: 700;
+}
+.info-home-info button {
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  width: 290px;
+  height: 72px;
+  border-radius: 33px;
+  background-color: #1a374d;
+  border: none;
+  cursor: pointer;
+  margin-top: 55px;
+}
+
+.bolsa-home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 80px;
+}
+.bolsa-home h2 {
+  margin: 0;
+  color: #1a374d;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 55px;
+}
+
+.bolsa-home-nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: solid 2px rgba(26, 55, 77, 0.4);
+  padding-bottom: 20px;
+  gap: 40px;
+}
+.bolsa-home-nav button {
+  color: #1a374d;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bolsa-home-nav button span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.bolsa-home-nav button div {
+  width: 100%;
+  height: 10px;
+  border-radius: 15px;
+  background-color: #1a374d;
+  margin-top: 4.5rem;
+  position: absolute;
+}
+
+.bolsa-home-location {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 45px;
+}
+.bolsa-home-location article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.bolsa-home-location article h5 {
+  color: #707070;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+.bolsa-home-location article a {
+  text-decoration: none;
+  color: #707070;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bolsa-home-location article a .icon-list:nth-child(1) {
+  height: 10px;
+  width: 3px;
+  background-color: #707070;
+  transform: rotate(-45deg);
+}
+.bolsa-home-location article a .icon-list:nth-child(2) {
+  height: 10px;
+  width: 3px;
+  background-color: red;
+  transform: rotate(45deg);
+  transform: translate(5px, 5px);
 }
 
 /*# sourceMappingURL=styles.css.map */

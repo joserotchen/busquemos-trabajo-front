@@ -45,6 +45,10 @@
 			justify-content: center;
 			align-items: center;
 			cursor: pointer;
+			svg {
+				color: #ffff;
+				font-size: 1.5rem;
+			}
 		}
 		.info {
 			display: flex;

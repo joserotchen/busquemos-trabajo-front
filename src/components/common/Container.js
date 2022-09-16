@@ -14,6 +14,11 @@ const Container = (props) => {
 					href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap"
 					rel="stylesheet"
 				></link>
+				{/* FONTAWESOME */}
+				<script
+					src="https://kit.fontawesome.com/e4dbba6dec.js"
+					crossorigin="anonymous"
+				></script>
 			</Head>
 			<Header />
 			<div className="container">{props.children}</div>

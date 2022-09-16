@@ -13,6 +13,7 @@
 	justify-content: center;
 	align-items: flex-start;
 	flex-direction: column;
+
 	h2 {
 		font-size: 20px;
 		font-weight: 600;
@@ -33,6 +34,7 @@
 	flex-direction: row;
 	align-items: flex-start;
 	justify-content: flex-start;
+	position: relative;
 
 	.icon {
 		margin-top: 0.7rem;
@@ -41,6 +43,23 @@
 		justify-content: center;
 		align-items: center;
 		width: 50px;
+		span {
+			width: 30px;
+			height: 30px;
+			background-color: $color-blue;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 100;
+			span {
+				background-color: #fff;
+				width: 10px;
+				height: 10px;
+				z-index: 100;
+				border-radius: 50%;
+			}
+		}
 	}
 }
 
@@ -105,4 +124,20 @@
 		font-weight: 600;
 		color: $color-blue;
 	}
+}
+
+// Linea del tiempo
+
+.experience-item::before {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: calc(100% + 30px);
+	right: 658px;
+	top: 30px;
+	background: #999;
+}
+
+.experience-item-last::before {
+	display: none;
 }

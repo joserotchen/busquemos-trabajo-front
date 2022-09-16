@@ -8,9 +8,9 @@ const Jobs = () => {
 
 				<div className="jobs-filter-checks">
 					<div>
-						<label class="container-input">
+						<label className="container-input">
 							<input type="checkbox" />
-							<span class="checkmark"></span>
+							<span className="checkmark"></span>
 							Contrato
 						</label>
 					</div>
@@ -19,9 +19,9 @@ const Jobs = () => {
 
 				<div className="jobs-filter-checks">
 					<div>
-						<label class="container-input">
+						<label className="container-input">
 							<input type="checkbox" />
-							<span class="checkmark"></span>
+							<span className="checkmark"></span>
 							Tiempo Completo
 						</label>
 					</div>
@@ -30,9 +30,9 @@ const Jobs = () => {
 
 				<div className="jobs-filter-checks">
 					<div>
-						<label class="container-input">
+						<label className="container-input">
 							<input type="checkbox" />
-							<span class="checkmark"></span>
+							<span className="checkmark"></span>
 							Part Time
 						</label>
 					</div>
@@ -41,9 +41,9 @@ const Jobs = () => {
 
 				<div className="jobs-filter-checks">
 					<div>
-						<label class="container-input">
+						<label className="container-input">
 							<input type="checkbox" />
-							<span class="checkmark"></span>
+							<span className="checkmark"></span>
 							Remoto
 						</label>
 					</div>
@@ -52,9 +52,9 @@ const Jobs = () => {
 
 				<div className="jobs-filter-checks">
 					<div>
-						<label class="container-input">
+						<label className="container-input">
 							<input type="checkbox" />
-							<span class="checkmark"></span>
+							<span className="checkmark"></span>
 							Practica
 						</label>
 					</div>
@@ -65,9 +65,9 @@ const Jobs = () => {
 
 				<div className="jobs-filter-checks">
 					<div>
-						<label class="container-input">
+						<label className="container-input">
 							<input type="checkbox" />
-							<span class="checkmark"></span>
+							<span className="checkmark"></span>
 							Junior
 						</label>
 					</div>
@@ -76,9 +76,9 @@ const Jobs = () => {
 
 				<div className="jobs-filter-checks">
 					<div>
-						<label class="container-input">
+						<label className="container-input">
 							<input type="checkbox" />
-							<span class="checkmark"></span>
+							<span className="checkmark"></span>
 							Semisenior
 						</label>
 					</div>
@@ -87,9 +87,9 @@ const Jobs = () => {
 
 				<div className="jobs-filter-checks">
 					<div>
-						<label class="container-input">
+						<label className="container-input">
 							<input type="checkbox" />
-							<span class="checkmark"></span>
+							<span className="checkmark"></span>
 							Senior
 						</label>
 					</div>
@@ -98,9 +98,9 @@ const Jobs = () => {
 
 				<div className="jobs-filter-checks">
 					<div>
-						<label class="container-input">
+						<label className="container-input">
 							<input type="checkbox" />
-							<span class="checkmark"></span>
+							<span className="checkmark"></span>
 							Sin experiencia
 						</label>
 					</div>
@@ -109,9 +109,9 @@ const Jobs = () => {
 
 				<div className="jobs-filter-checks">
 					<div>
-						<label class="container-input">
+						<label className="container-input">
 							<input type="checkbox" />
-							<span class="checkmark"></span>
+							<span className="checkmark"></span>
 							Ejecutivo
 						</label>
 					</div>

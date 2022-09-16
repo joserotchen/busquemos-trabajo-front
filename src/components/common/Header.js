@@ -6,7 +6,7 @@ const Header = () => {
 		<header>
 			<div className="content-container">
 				<div className="header-container">
-					<div class="logo">
+					<div className="logo">
 						<Link href="/">
 							<a style={{ textDecoration: "none" }}>
 								<h2>empleo</h2>

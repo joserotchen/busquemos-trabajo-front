@@ -1,26 +1,27 @@
 import Image from "next/image";
-import imageType from "../../../public/img/6-layers.webp";
-import imageLocation from "../../../public/img/2-layers.webp";
-import imageExperience from "../../../public/img/3-layers.webp";
-import imageDate from "../../../public/img/calendar.webp";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faGauge } from "@fortawesome/free-solid-svg-icons";
+import { faLaptop } from "@fortawesome/free-solid-svg-icons";
 
 const Card = ({ type, title, location, experience, date, logo }) => {
 	return (
 		<article className="card">
 			<div className="card-info">
 				<h5>
-					<Image width={15} height={15} src={imageType} /> {type}
+					<FontAwesomeIcon icon={faLaptop} /> {type}
 				</h5>
 				<h3>{title}</h3>
 				<div className="more-info">
 					<span>
-						<Image width={15} height={15} src={imageLocation} /> {location}
+						<FontAwesomeIcon icon={faLocationDot} /> {location}
 					</span>
 					<span>
-						<Image width={15} height={15} src={imageExperience} /> {experience}{" "}
+						<FontAwesomeIcon icon={faGauge} /> {experience}{" "}
 					</span>
 					<span className="info-date">
-						<Image width={15} height={15} src={imageDate} /> {date}
+						<FontAwesomeIcon icon={faCalendarDays} /> {date}
 					</span>
 				</div>
 			</div>

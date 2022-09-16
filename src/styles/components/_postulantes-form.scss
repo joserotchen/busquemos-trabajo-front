@@ -44,6 +44,11 @@
 		font-weight: 500;
 		color: $color-text;
 		padding: 1rem;
+		option {
+		}
+	}
+	select:focus {
+		outline: none;
 	}
 	button {
 		width: 25%;
