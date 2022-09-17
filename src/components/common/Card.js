@@ -4,6 +4,7 @@ import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faGauge } from "@fortawesome/free-solid-svg-icons";
 import { faLaptop } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Card = ({ type, title, location, experience, date, logo }) => {
 	return (
@@ -26,7 +27,9 @@ const Card = ({ type, title, location, experience, date, logo }) => {
 				</div>
 			</div>
 			<div className="card-action">
-				<button>Ver oferta</button>
+				<button>
+					Ver oferta <FontAwesomeIcon icon={faArrowRight} />
+				</button>
 				<div>
 					{" "}
 					<Image src={logo} />

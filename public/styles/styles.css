@@ -33,6 +33,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   flex-grow: 1;
+  padding-top: 100px;
 }
 
 .content-container {
@@ -999,6 +1000,10 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 50000;
 }
 
 .header-container {
@@ -1042,9 +1047,9 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 70px;
-  margin-top: 70px;
+  min-height: calc(100vh - 100px - 145px);
 }
 
 .hero-home__main {
@@ -1385,17 +1390,23 @@ header {
   align-items: center;
 }
 .card-action button {
-  width: 95px;
-  height: 27px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  border-radius: 10px;
   border: none;
   background-color: #406882;
   color: #ffffff;
-  font-size: 10px;
-  font-weight: 500;
   font-family: inherit;
   cursor: pointer;
+  font-size: 16px;
+  height: auto;
+  width: auto;
+  padding: 5px 20px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 .nav-cv {

@@ -81,16 +81,22 @@
 	justify-content: space-between;
 	align-items: center;
 	button {
-		width: 95px;
-		height: 27px;
 		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-		border-radius: 10px;
 		border: none;
 		background-color: $color-blue;
 		color: #ffffff;
-		font-size: 10px;
-		font-weight: 500;
 		font-family: inherit;
 		cursor: pointer;
+		font-size: 16px;
+		height: auto;
+		width: auto;
+		padding: 5px 20px;
+		border-radius: 3px;
+		text-transform: uppercase;
+		font-weight: 600;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 5px;
 	}
 }

@@ -2,9 +2,9 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 	gap: 70px;
-	margin-top: 70px;
+	min-height: calc(100vh - 100px - 145px);
 }
 
 .hero-home__main {
