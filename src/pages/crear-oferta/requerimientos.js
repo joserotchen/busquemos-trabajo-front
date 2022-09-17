@@ -7,7 +7,7 @@ const requerimientos = () => {
 			<div className="content-container">
 				<section className="crear-oferta-informacion">
 					<h1>Crear nueva oferta</h1>
-					<CrearOfertaNav page={"informacion"} />
+					<CrearOfertaNav page={"requerimientos"} />
 					<div className="crear-oferta-informacion-container">
 						<form>
 							<h2>Requerimientos</h2>

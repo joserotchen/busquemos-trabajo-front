@@ -161,37 +161,6 @@
 				border-radius: 8px;
 			}
 		}
-		.btns-form {
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			margin-top: 70px;
-			.cancelar {
-				width: 148px;
-				height: 60px;
-				border-radius: 10px;
-				background-color: $color-text;
-				color: #ffffff;
-				font-family: inherit;
-				font-size: 18px;
-				font-weight: 500;
-				border: none;
-				cursor: pointer;
-			}
-			.guardar {
-				border: none;
-				cursor: pointer;
-				color: #ffffff;
-				width: 251px;
-				height: 60px;
-				border-radius: 10px;
-				background-color: $color-blue;
-				font-size: 18px;
-				font-weight: 500;
-				font-family: inherit;
-			}
-		}
 	}
 }
 
@@ -222,6 +191,42 @@
 		border: none;
 	}
 }
+
+// BOTONES FORM
+
+.btns-form {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 70px;
+	.cancelar {
+		width: 148px;
+		height: 60px;
+		border-radius: 10px;
+		background-color: $color-text;
+		color: #ffffff;
+		font-family: inherit;
+		font-size: 18px;
+		font-weight: 500;
+		border: none;
+		cursor: pointer;
+	}
+	.guardar {
+		border: none;
+		cursor: pointer;
+		color: #ffffff;
+		width: 251px;
+		height: 60px;
+		border-radius: 10px;
+		background-color: $color-blue;
+		font-size: 18px;
+		font-weight: 500;
+		font-family: inherit;
+	}
+}
+
+///
 
 // CHECKBOX ESPECIAL
 .label-special-input {
@@ -319,12 +324,123 @@
 	justify-content: center;
 	flex-direction: column;
 	align-items: flex-start;
-	background-color: red;
+	h2 {
+		color: $color-blue-dark;
+		font-family: inherit;
+		font-size: 24px;
+		font-weight: 700;
+		margin: 0;
+		margin-top: 45px;
+		margin-bottom: 50px;
+		margin-left: 170px;
+	}
 }
 
 .beneficios-form {
 	width: 830px;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: center;
+	margin: 0 auto;
+	gap: 35px;
+	.item {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.beneficio {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 20px;
+		}
+	}
 }
+
+// CHECKBOX ESPECIAL BIG
+.label-special-input-big {
+	width: auto;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	.button {
+		position: relative;
+		top: 50%;
+		width: 129px;
+		height: 57px;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: solid 3px $color-blue;
+	}
+
+	.button.r,
+	.button.r .layer {
+		border-radius: 100px;
+	}
+
+	.button.b2 {
+		border-radius: 2px;
+	}
+
+	.checkbox {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		opacity: 0;
+		cursor: pointer;
+		z-index: 3;
+	}
+
+	.knobs {
+		z-index: 2;
+	}
+
+	.layer {
+		width: 100%;
+		background-color: #ebf7fc;
+		transition: 0.3s ease all;
+		z-index: 1;
+	}
+
+	#button-1 .knobs:before {
+		content: "Si";
+		position: absolute;
+		top: 3px;
+		left: 4px;
+		width: 45px;
+		height: 45px;
+		color: #fff;
+		font-family: inherit;
+		font-size: 25px;
+		text-align: center;
+		line-height: 1;
+		padding: 9px 4px;
+		background-color: $color-blue;
+		border-radius: 50%;
+		transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+	}
+
+	#button-1 .checkbox:checked + .knobs:before {
+		content: "No";
+		left: 70px;
+		background-color: $color-text;
+	}
+
+	#button-1 .checkbox:checked ~ .layer {
+		background-color: #fcebeb;
+	}
+
+	#button-1 .knobs,
+	#button-1 .knobs:before,
+	#button-1 .layer {
+		transition: 0.3s ease all;
+	}
+}
+
+//TERMINA CHECKBOX BIG

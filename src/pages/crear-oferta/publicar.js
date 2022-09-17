@@ -9,7 +9,7 @@ const publicar = () => {
 			<div className="content-container">
 				<section className="crear-oferta-informacion">
 					<h1>Crear nueva oferta</h1>
-					<CrearOfertaNav page={"informacion"} />
+					<CrearOfertaNav page={"publicar"} />
 					<div className="crear-oferta-publicar">
 						<h2>¡Casi terminamos!</h2>
 						<Image src={imagePublicar} />
