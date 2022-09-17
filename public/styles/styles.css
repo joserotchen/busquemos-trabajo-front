@@ -616,6 +616,37 @@ body {
   justify-content: flex-start;
   gap: 20px;
 }
+.crear-oferta-informacion-container form .add-pregunta {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.crear-oferta-informacion-container form .add-pregunta button {
+  width: 179px;
+  height: 60px;
+  background-color: #1a374d;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.crear-oferta-informacion-container form p {
+  color: #707070;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+.crear-oferta-informacion-container form .textarea-preguntas {
+  color: #1a374d;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 30px;
+}
 .crear-oferta-informacion-container form .multiple-checks {
   width: 357px;
   display: flex;
@@ -740,6 +771,126 @@ body {
   font-size: 18px;
   font-weight: 500;
   font-family: inherit;
+}
+
+.crear-oferta-publicar {
+  width: 100%;
+  height: 950px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+.crear-oferta-publicar h2 {
+  color: #1a374d;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+}
+.crear-oferta-publicar button {
+  width: 138px;
+  height: 61px;
+  border-radius: 10px;
+  background-color: #406882;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+}
+
+.label-special-input {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.label-special-input .button {
+  position: relative;
+  top: 50%;
+  width: 74px;
+  height: 36px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 3px #406882;
+}
+.label-special-input .button.r,
+.label-special-input .button.r .layer {
+  border-radius: 100px;
+}
+.label-special-input .button.b2 {
+  border-radius: 2px;
+}
+.label-special-input .checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+.label-special-input .knobs {
+  z-index: 2;
+}
+.label-special-input .layer {
+  width: 100%;
+  background-color: #ebf7fc;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+.label-special-input #button-1 .knobs:before {
+  content: "Si";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  background-color: #406882;
+  border-radius: 50%;
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+.label-special-input #button-1 .checkbox:checked + .knobs:before {
+  content: "No";
+  left: 42px;
+  background-color: #707070;
+}
+.label-special-input #button-1 .checkbox:checked ~ .layer {
+  background-color: #fcebeb;
+}
+.label-special-input #button-1 .knobs,
+.label-special-input #button-1 .knobs:before,
+.label-special-input #button-1 .layer {
+  transition: 0.3s ease all;
+}
+
+.crear-oferta-beneficios-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: red;
+}
+
+.beneficios-form {
+  width: 830px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 header {

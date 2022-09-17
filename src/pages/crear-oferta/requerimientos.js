@@ -95,11 +95,32 @@ const requerimientos = () => {
 								</label>
 							</div>
 
-							<label>Disponibilidad para viajar</label>
+							<label className="label-special-input">
+								Disponibilidad para viajar
+								<div class="button r" id="button-1">
+									<input type="checkbox" class="checkbox" />
+									<div class="knobs"></div>
+									<div class="layer"></div>
+								</div>
+							</label>
 
-							<label>Disponibilidad para cambiar de residencia</label>
+							<label className="label-special-input">
+								Disponibilidad para cambiar de residencia
+								<div class="button r" id="button-1">
+									<input type="checkbox" class="checkbox" />
+									<div class="knobs"></div>
+									<div class="layer"></div>
+								</div>
+							</label>
 
-							<label>Persona con discapacidad</label>
+							<label className="label-special-input">
+								Persona con discapacidad
+								<div class="button r" id="button-1">
+									<input type="checkbox" class="checkbox" />
+									<div class="knobs"></div>
+									<div class="layer"></div>
+								</div>
+							</label>
 
 							<div className="btns-form">
 								<button className="cancelar">Cancelar</button>

@@ -34,6 +34,38 @@
 		align-items: flex-start;
 		justify-content: flex-start;
 		gap: 20px;
+
+		.add-pregunta {
+			width: 100%;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			margin-bottom: 100px;
+			button {
+				width: 179px;
+				height: 60px;
+				background-color: $color-blue-dark;
+				color: #ffffff;
+				font-family: inherit;
+				font-size: 18px;
+				font-weight: 500;
+				border: none;
+				cursor: pointer;
+				border-radius: 8px;
+			}
+		}
+		p {
+			color: $color-text;
+			font-size: 18px;
+			font-weight: 500;
+			margin: 0;
+		}
+		.textarea-preguntas {
+			color: $color-blue-dark;
+			font-size: 18px;
+			font-weight: 500;
+			margin-top: 30px;
+		}
 		.multiple-checks {
 			width: 357px;
 			display: flex;
@@ -161,4 +193,138 @@
 			}
 		}
 	}
+}
+
+.crear-oferta-publicar {
+	width: 100%;
+	height: 950px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 70px;
+	h2 {
+		color: $color-blue-dark;
+		font-family: inherit;
+		font-size: 30px;
+		font-weight: 700;
+	}
+	button {
+		width: 138px;
+		height: 61px;
+		border-radius: 10px;
+		background-color: $color-blue;
+		color: #fff;
+		cursor: pointer;
+		font-family: inherit;
+		font-size: 18px;
+		font-weight: 500;
+		border: none;
+	}
+}
+
+// CHECKBOX ESPECIAL
+.label-special-input {
+	width: auto;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	.button {
+		position: relative;
+		top: 50%;
+		width: 74px;
+		height: 36px;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: solid 3px $color-blue;
+	}
+
+	.button.r,
+	.button.r .layer {
+		border-radius: 100px;
+	}
+
+	.button.b2 {
+		border-radius: 2px;
+	}
+
+	.checkbox {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		opacity: 0;
+		cursor: pointer;
+		z-index: 3;
+	}
+
+	.knobs {
+		z-index: 2;
+	}
+
+	.layer {
+		width: 100%;
+		background-color: #ebf7fc;
+		transition: 0.3s ease all;
+		z-index: 1;
+	}
+
+	#button-1 .knobs:before {
+		content: "Si";
+		position: absolute;
+		top: 3px;
+		left: 4px;
+		width: 25px;
+		height: 25px;
+		color: #fff;
+		font-size: 10px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1;
+		padding: 9px 4px;
+		background-color: $color-blue;
+		border-radius: 50%;
+		transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+	}
+
+	#button-1 .checkbox:checked + .knobs:before {
+		content: "No";
+		left: 42px;
+		background-color: $color-text;
+	}
+
+	#button-1 .checkbox:checked ~ .layer {
+		background-color: #fcebeb;
+	}
+
+	#button-1 .knobs,
+	#button-1 .knobs:before,
+	#button-1 .layer {
+		transition: 0.3s ease all;
+	}
+}
+
+//TERMINA CHECKBOX
+
+//Beneficios
+
+.crear-oferta-beneficios-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: red;
+}
+
+.beneficios-form {
+	width: 830px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
