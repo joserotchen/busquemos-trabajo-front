@@ -2,7 +2,7 @@ import Cards from "../common/Cards";
 
 const Jobs = () => {
 	return (
-		<section className="jobs">
+		<section id="jobs-home" className="jobs">
 			<div className="jobs-filter">
 				<h5>Tipo de Empleo</h5>
 

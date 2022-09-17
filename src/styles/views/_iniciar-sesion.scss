@@ -1,5 +1,5 @@
 .login {
-	width: 100%;
+	width: 1344px;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -17,12 +17,15 @@
 		font-weight: 700;
 	}
 	form {
+		width: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		gap: 25px;
+		gap: 20px;
+		margin-bottom: 60px;
 		.show-password {
+			width: 100%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -38,27 +41,28 @@
 			}
 		}
 		input {
-			width: 432px;
-			height: 40px;
-			border-radius: 8px;
-			border: 2px solid $color-blue-dark;
-			padding: 0 1rem;
-			color: rgba(64, 104, 130, 0.52);
+			color: $color-text;
 			font-size: 15px;
 			font-weight: 500;
 			font-family: inherit;
+			width: 70%;
+			padding: 8px 15px;
+			border: 1.5px solid $color-blue-dark;
+			border-radius: 5px;
 		}
 		input[type="submit"] {
 			background-color: $color-blue;
 			border: none;
-			font-weight: 700;
 			color: #fff;
-			width: 105px;
-			height: 40px;
-			border-radius: 10px;
-			margin-top: 15px;
-			margin-bottom: 70px;
+			margin-top: 20px;
 			cursor: pointer;
+			font-size: 16px;
+			height: auto;
+			width: auto;
+			padding: 12px 30px;
+			border-radius: 3px;
+			text-transform: uppercase;
+			font-weight: 600;
 		}
 	}
 	span {
@@ -66,6 +70,7 @@
 		font-weight: 500;
 		color: $color-blue-dark;
 		a {
+			margin-left: 10px;
 			color: #c5bbbb;
 		}
 	}
