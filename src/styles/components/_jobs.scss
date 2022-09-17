@@ -68,7 +68,7 @@
 	justify-content: space-between;
 	align-items: center;
 	height: 100px;
-	h4 {
+	span {
 		color: $color-blue-dark;
 		font-size: 20px;
 		font-weight: 800;
@@ -125,7 +125,7 @@
 
 /* On mouse-over, add a grey background color */
 .container-input:hover input ~ .checkmark {
-	background-color: #ccc;
+	background-color: $color-blue;
 }
 
 /* When the checkbox is checked, add a blue background */

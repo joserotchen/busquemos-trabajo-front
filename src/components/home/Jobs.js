@@ -120,7 +120,7 @@ const Jobs = () => {
 			</div>
 			<div className="jobs-results">
 				<div className="jobs-results-nav">
-					<h4>Ver Resultados</h4>
+					<span>Ver Resultados</span>
 					<select>
 						<option value="reciente">Reciente</option>
 					</select>
