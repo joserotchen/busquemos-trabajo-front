@@ -5,10 +5,10 @@ const preguntas = () => {
 	return (
 		<Container>
 			<div className="content-container">
-				<section className="crear-oferta-informacion">
+				<section className="crear-oferta-preguntas">
 					<h1>Crear nueva oferta</h1>
 					<CrearOfertaNav page={"preguntas"} />
-					<div className="crear-oferta-informacion-container">
+					<div className="crear-oferta-preguntas-container">
 						<form>
 							<h2>Preguntas</h2>
 							<p>

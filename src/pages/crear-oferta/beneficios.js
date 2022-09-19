@@ -13,7 +13,7 @@ const beneficios = () => {
 	return (
 		<Container>
 			<div className="content-container">
-				<section className="crear-oferta-informacion">
+				<section className="crear-oferta-beneficios">
 					<h1>Crear nueva oferta</h1>
 					<CrearOfertaNav page={"beneficios"} />
 					<div className="crear-oferta-beneficios-container">

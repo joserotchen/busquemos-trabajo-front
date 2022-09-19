@@ -1,8 +1,16 @@
+// General  ----------------------------------------------------->
 @import "variables";
 @import "reset";
 @import "typography";
 @import "helpers";
-// Views
+// Views  ----------------------------------------------------->
+// Crear oferta
+@import "views/crear-oferta/informacion";
+@import "views/crear-oferta/requerimientos";
+@import "views/crear-oferta/beneficios";
+@import "views/crear-oferta/preguntas";
+@import "views/crear-oferta/publicar";
+//
 @import "views/iniciar-sesion";
 @import "views/registrarse";
 @import "views/mis-alertas";
@@ -10,28 +18,29 @@
 @import "views/mis-postulaciones";
 @import "views/configuracion";
 @import "views/postulantes";
-// (separar cada vista de crear oferta)
-@import "views/crear-oferta";
 @import "views/subscripcion";
 @import "views/quienes-somos";
 @import "views/preguntas-frecuentes";
 @import "views/vacantes";
-// Components
-@import "components/header";
-@import "components/hero-home";
-@import "components/jobs";
-@import "components/cards";
+// Components ----------------------------------------------------->
+// Common
+@import "components/common/header";
+@import "components/common/footer";
+@import "components/common/cards";
+// Home
+@import "components/home/hero-home";
+@import "components/home/jobs";
+@import "components/home/bolsa-home";
+@import "components/home/info-home";
+//
 @import "components/nav-cv";
 @import "components/profile-cv";
 @import "components/experience-cv";
-@import "components/footer";
 @import "components/postulantes-form";
 @import "components/postulantes-cards";
 @import "components/modal-editar-experiencia";
 @import "components/profile-cv-candidato";
 @import "components/experience-cv-candidato";
-@import "components/info-home";
-@import "components/bolsa-home";
 @import "components/crear-oferta-nav";
 @import "components/blog/main-blog";
 @import "components/blog/cards-blog";

@@ -7,10 +7,10 @@ const publicar = () => {
 	return (
 		<Container>
 			<div className="content-container">
-				<section className="crear-oferta-informacion">
+				<section className="crear-oferta-publicar">
 					<h1>Crear nueva oferta</h1>
 					<CrearOfertaNav page={"publicar"} />
-					<div className="crear-oferta-publicar">
+					<div className="crear-oferta-publicar-container">
 						<h2>¡Casi terminamos!</h2>
 						<Image src={imagePublicar} />
 						<button>Publicar</button>
