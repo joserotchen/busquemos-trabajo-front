@@ -1,15 +1,13 @@
-import Container from "../components/common/Container";
-import NavCv from "../components/mi-cv/NavCv";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
+import Container from "../../components/common/Container";
+import NavCv from "../../components/mi-cv/NavCv";
 
-const misAvisos = () => {
+const misPostulaciones = () => {
 	return (
 		<Container>
 			<div className="content-container ">
-				<NavCv page={"mis-avisos"} />
-				<section className="mis-avisos">
-					<h1>Mis Avisos</h1>
+				<NavCv page={"mis-postulaciones"} />
+				<section className="mis-postulaciones">
+					<h1>Mis Postulaciones</h1>
 					<div className="mis-avisos-select">
 						<select>
 							<option value="reciente">Reciente</option>
@@ -18,27 +16,33 @@ const misAvisos = () => {
 					<article>
 						<div className="info">
 							<h3>Programador Fullstack</h3>
-							<h5>Mercado Libre</h5>
+							<h5>Kibernum</h5>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
 								pellentesque diam nec convallis porttitor.
 							</p>
 						</div>
-						<div className="trash">
-							<FontAwesomeIcon icon={faTrashCan} />
+						<div className="data">
+							<h3>Fecha de Postulación</h3>
+							<h6>23/09/2022</h6>
+							<h5>Estado</h5>
+							<span>Enviada</span>
 						</div>
 					</article>
 					<article>
 						<div className="info">
-							<h3>Programador React-Redux</h3>
+							<h3>Desarrollador Web</h3>
 							<h5>Google</h5>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
 								pellentesque diam nec convallis porttitor.
 							</p>
 						</div>
-						<div className="trash">
-							<FontAwesomeIcon icon={faTrashCan} />
+						<div className="data">
+							<h3>Fecha de Postulación</h3>
+							<h6>12/09/2022</h6>
+							<h5>Estado</h5>
+							<span>Proceso finalizado</span>
 						</div>
 					</article>
 				</section>
@@ -47,4 +51,4 @@ const misAvisos = () => {
 	);
 };
 
-export default misAvisos;
+export default misPostulaciones;

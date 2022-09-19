@@ -36,7 +36,7 @@ const NavCv = ({ page }) => {
 
 	return (
 		<nav className="nav-cv">
-			<Link href="/mi-cv">
+			<Link href="/perfil/mi-cv">
 				<a id="mi-cv">
 					<span>
 						<Image src={micvImg} /> Mi CV
@@ -44,7 +44,7 @@ const NavCv = ({ page }) => {
 					{page === "mi-cv" ? <div className="nav-active"></div> : null}
 				</a>
 			</Link>
-			<Link href="/mis-alertas">
+			<Link href="/perfil/mis-alertas">
 				<a id="mis-alertas">
 					<span>
 						<Image src={alertasImg} /> Mis Alertas
@@ -52,7 +52,7 @@ const NavCv = ({ page }) => {
 					{page === "mis-alertas" ? <div className="nav-active"></div> : null}
 				</a>
 			</Link>
-			<Link href="/mis-avisos">
+			<Link href="/perfil/mis-avisos">
 				<a id="mis-avisos">
 					<span>
 						<Image src={avisosImg} /> Mis Avisos Guardados
@@ -60,7 +60,7 @@ const NavCv = ({ page }) => {
 					{page === "mis-avisos" ? <div className="nav-active"></div> : null}
 				</a>
 			</Link>
-			<Link href="/mis-postulaciones">
+			<Link href="/perfil/mis-postulaciones">
 				<a id="mis-postulaciones">
 					<span>
 						<Image src={postulacionesImg} /> Mis Postulaciones
@@ -70,7 +70,7 @@ const NavCv = ({ page }) => {
 					) : null}
 				</a>
 			</Link>
-			<Link href="/configuracion">
+			<Link href="/perfil/configuracion">
 				<a id="configuracion">
 					<span>
 						<Image src={configImg} /> Configuración

@@ -121,9 +121,17 @@ const Jobs = () => {
 			<div className="jobs-results">
 				<div className="jobs-results-nav">
 					<span>Ver Resultados</span>
-					<select>
-						<option value="reciente">Reciente</option>
-					</select>
+					<span class="dropdown">
+						<button>Recientes</button>
+						<label>
+							<input type="checkbox" />
+							<ul>
+								<li>Recientes</li>
+								<li>Una opción</li>
+								<li>Otra opción</li>
+							</ul>
+						</label>
+					</span>
 				</div>
 				<Cards />
 			</div>

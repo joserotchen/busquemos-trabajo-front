@@ -1,5 +1,5 @@
-import Container from "../components/common/Container";
-import NavCv from "../components/mi-cv/NavCv";
+import Container from "../../components/common/Container";
+import NavCv from "../../components/mi-cv/NavCv";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen } from "@fortawesome/free-solid-svg-icons";
 import { faTrashCan } from "@fortawesome/free-solid-svg-icons";

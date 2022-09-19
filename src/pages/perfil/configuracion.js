@@ -1,13 +1,13 @@
-import Container from "../components/common/Container";
-import NavCv from "../components/mi-cv/NavCv";
-import ConfiguracionCuenta from "../components/configuracion/ConfiguracionCuenta";
-import ConfiguracionNotificaciones from "../components/configuracion/ConfiguracionNotificaciones";
-import ConfiguracionSeguridad from "../components/configuracion/ConfiguracionSeguridad";
+import Container from "../../components/common/Container";
+import NavCv from "../../components/mi-cv/NavCv";
+import ConfiguracionCuenta from "../../components/configuracion/ConfiguracionCuenta";
+import ConfiguracionNotificaciones from "../../components/configuracion/ConfiguracionNotificaciones";
+import ConfiguracionSeguridad from "../../components/configuracion/ConfiguracionSeguridad";
 import { useState } from "react";
 import Image from "next/image";
-import userImg from "../../public/img/user-img.png";
-import bellImg from "../../public/img/bell-img.png";
-import securityImg from "../../public/img/security-img.png";
+import userImg from "../../../public/img/user-img.png";
+import bellImg from "../../../public/img/bell-img.png";
+import securityImg from "../../../public/img/security-img.png";
 
 const configuracion = () => {
 	return (
