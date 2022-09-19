@@ -1,0 +1,132 @@
+.subscripcion {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	h1 {
+		color: $color-blue-dark;
+		font-size: 35px;
+		font-weight: 700;
+		margin: 0;
+		margin-bottom: 60px;
+	}
+}
+
+.planes-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	.plan {
+		width: 345px;
+		height: 511px;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+		border-radius: 30px;
+		background-color: #ffffff;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 25px;
+		position: relative;
+		.recomendado {
+			position: absolute;
+			margin: 0;
+			width: 112px;
+			height: 30px;
+			background-color: $color-blue;
+			color: #ffffff;
+			font-family: inherit;
+			font-size: 12px;
+			font-weight: 600;
+			border-radius: 33px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			top: 15px;
+			right: 15px;
+		}
+		h2 {
+			color: $color-blue-dark;
+			font-size: 22px;
+			font-weight: 600;
+			margin: 0;
+
+			margin-top: 60px;
+		}
+		.container-center {
+			height: 250px;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			gap: 30px;
+			h5 {
+				color: $color-text;
+				font-size: 16px;
+				font-weight: 500;
+				margin: 0;
+			}
+			.features {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				gap: 7px;
+
+				.feature {
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+					gap: 5px;
+					div {
+						width: 20px;
+						height: 20px;
+						color: $color-blue-dark;
+						svg {
+							width: 100%;
+							height: 100%;
+						}
+					}
+					span {
+						color: $color-text;
+						font-family: inherit;
+						font-size: 12px;
+						font-weight: 400;
+					}
+				}
+			}
+		}
+
+		.container-bottom {
+			margin: 0;
+			margin-bottom: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 35px;
+			h3 {
+				color: $color-blue-dark;
+				font-size: 18px;
+				font-weight: 600;
+				margin: 0;
+			}
+			button {
+				width: 140px;
+				height: 40px;
+				border-radius: 30px;
+				background-color: $color-blue-dark;
+				color: #ffffff;
+				border: none;
+				cursor: pointer;
+				font-size: 16px;
+				font-weight: 500;
+				font-family: inherit;
+			}
+		}
+	}
+}

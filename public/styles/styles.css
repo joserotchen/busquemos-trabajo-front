@@ -1016,6 +1016,259 @@ body {
   transition: 0.3s ease all;
 }
 
+.subscripcion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subscripcion h1 {
+  color: #1a374d;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.planes-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.planes-container .plan {
+  width: 345px;
+  height: 511px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 30px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  position: relative;
+}
+.planes-container .plan .recomendado {
+  position: absolute;
+  margin: 0;
+  width: 112px;
+  height: 30px;
+  background-color: #406882;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 15px;
+  right: 15px;
+}
+.planes-container .plan h2 {
+  color: #1a374d;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 60px;
+}
+.planes-container .plan .container-center {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+.planes-container .plan .container-center h5 {
+  color: #707070;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+.planes-container .plan .container-center .features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+}
+.planes-container .plan .container-center .features .feature {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+.planes-container .plan .container-center .features .feature div {
+  width: 20px;
+  height: 20px;
+  color: #1a374d;
+}
+.planes-container .plan .container-center .features .feature div svg {
+  width: 100%;
+  height: 100%;
+}
+.planes-container .plan .container-center .features .feature span {
+  color: #707070;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+}
+.planes-container .plan .container-bottom {
+  margin: 0;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+.planes-container .plan .container-bottom h3 {
+  color: #1a374d;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+.planes-container .plan .container-bottom button {
+  width: 140px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #1a374d;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.quienes-somos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quienes-somos h1 {
+  color: #1a374d;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.quienes-somos-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 125px;
+}
+.quienes-somos-container div {
+  width: 50%;
+  margin: 0;
+}
+.quienes-somos-container p {
+  width: 50%;
+  margin: 0;
+  color: #707070;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.preguntas-frecuentes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.preguntas-frecuentes h1 {
+  color: #1a374d;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.preguntas-frecuentes h2 {
+  color: #707070;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 80px;
+}
+
+.faq {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.faq h5 {
+  margin: 0;
+  color: #406882;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 600;
+}
+.faq p {
+  color: #707070;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 867px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  width: 867px;
+}
+
+.accordion:after {
+  content: "+"; /* Unicode character for "plus" sign (+) */
+  font-size: 25px;
+  font-weight: 100;
+  color: #134563;
+  float: right;
+  margin-left: 5px;
+  border: solid 1px #134563;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active:after {
+  content: "-"; /* Unicode character for "minus" sign (-) */
+}
+
 header {
   width: 100%;
   display: flex;
@@ -2445,6 +2698,100 @@ footer p {
   height: 10px;
   margin-right: 10px;
   margin-left: 10px;
+}
+
+.main-blog {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-blog h1 {
+  color: #1a374d;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.main-blog h2 {
+  color: #707070;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 65px;
+}
+.main-blog a {
+  text-decoration: none;
+  width: 100%;
+}
+
+.blog-big-card {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+
+.blog-big-card-img {
+  width: 50%;
+  width: 502px;
+  height: 292px;
+  border-radius: 10px;
+}
+
+.blog-big-card-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.blog-big-card-text h3 {
+  color: #1a374d;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0;
+  width: 500px;
+}
+.blog-big-card-text p {
+  color: #707070;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.cards-blog {
+  margin-top: 60px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 65px;
+  column-gap: 45px;
+}
+.cards-blog a {
+  text-decoration: none;
+  color: inherit;
+  width: 336px;
+}
+.cards-blog a article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cards-blog a article h3 {
+  color: #1a374d;
+  font-family: inherit;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 30px;
+}
+.cards-blog a article p {
+  margin: 0;
+  color: #707070;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 17px;
 }
 
 /*# sourceMappingURL=styles.css.map */
