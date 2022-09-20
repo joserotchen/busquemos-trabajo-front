@@ -1508,11 +1508,11 @@ BOTONES FORM .btns-form .guardar {
 }
 
 .faq {
-  width: 100%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .faq h5 {
   margin: 0;
