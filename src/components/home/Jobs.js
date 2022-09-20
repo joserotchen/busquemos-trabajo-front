@@ -1,6 +1,14 @@
 import Cards from "../common/Cards";
+import { useState } from "react";
 
 const Jobs = () => {
+	const [drop, setDrop] = useState("Recientes");
+
+	const changeDrop = (e) => {
+		const value = e.target.textContent;
+		setDrop(value);
+	};
+
 	return (
 		<section id="jobs-home" className="jobs">
 			<div className="jobs-filter">
@@ -122,13 +130,13 @@ const Jobs = () => {
 				<div className="jobs-results-nav">
 					<span>Ver Resultados</span>
 					<span class="dropdown">
-						<button>Recientes</button>
+						<button>{drop} </button>
 						<label>
 							<input type="checkbox" />
 							<ul>
-								<li>Recientes</li>
-								<li>Una opción</li>
-								<li>Otra opción</li>
+								<li onClick={changeDrop}>Recientes</li>
+								<li onClick={changeDrop}>Una opción</li>
+								<li onClick={changeDrop}>Otra opción</li>
 							</ul>
 						</label>
 					</span>

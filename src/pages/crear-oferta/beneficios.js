@@ -8,8 +8,14 @@ import vacacionesImg from "../../../public/img/vacaciones.png";
 import fiestasImg from "../../../public/img/fiestas.png";
 import navidadImg from "../../../public/img/navidad.png";
 import otrosImg from "../../../public/img/otros.png";
+import Router from "next/router";
 
 const beneficios = () => {
+	const goNextPage = (e) => {
+		e.preventDefault();
+		Router.push("/crear-oferta/preguntas");
+	};
+
 	return (
 		<Container>
 			<div className="content-container">
@@ -119,7 +125,9 @@ const beneficios = () => {
 
 							<div className="btns-form">
 								<button className="cancelar">Cancelar</button>
-								<button className="guardar">Guardar y Continuar</button>
+								<button className="guardar" onClick={goNextPage}>
+									Guardar y Continuar
+								</button>
 							</div>
 						</form>
 					</div>

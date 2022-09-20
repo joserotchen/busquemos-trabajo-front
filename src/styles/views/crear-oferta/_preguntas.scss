@@ -89,6 +89,10 @@
 			padding: 0 1rem;
 			border: solid 2px $color-blue;
 		}
+		textarea:focus {
+			border: 3px solid $color-blue;
+			outline: none;
+		}
 	}
 }
 

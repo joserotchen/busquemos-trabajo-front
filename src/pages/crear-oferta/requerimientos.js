@@ -1,7 +1,13 @@
 import Container from "../../components/common/Container";
 import CrearOfertaNav from "../../components/crear-oferta/CrearOfertaNav";
+import Router from "next/router";
 
 const requerimientos = () => {
+	const goNextPage = (e) => {
+		e.preventDefault();
+		Router.push("/crear-oferta/beneficios");
+	};
+
 	return (
 		<Container>
 			<div className="content-container">
@@ -124,7 +130,9 @@ const requerimientos = () => {
 
 							<div className="btns-form">
 								<button className="cancelar">Cancelar</button>
-								<button className="guardar">Guardar y Continuar</button>
+								<button className="guardar" onClick={goNextPage}>
+									Guardar y Continuar
+								</button>
 							</div>
 						</form>
 					</div>

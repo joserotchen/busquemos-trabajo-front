@@ -8,8 +8,8 @@
 		font-weight: 700;
 		color: $color-blue-dark;
 		margin: 0;
-		margin-top: 90px;
-		margin-bottom: 80px;
+		margin-top: 80px;
+		margin-bottom: 65px;
 	}
 	.mis-avisos-select {
 		width: 100%;
@@ -34,7 +34,7 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: flex-start;
-		padding: 30px;
+		padding: 40px;
 		.data {
 			width: 450px;
 			height: 100%;
@@ -47,21 +47,21 @@
 				font-size: 20px;
 				font-weight: 700;
 				margin: 0;
-				margin-bottom: 30px;
+				margin-bottom: 10px;
 			}
 			h6 {
 				color: $color-text;
 				font-size: 20px;
 				font-weight: 500;
 				margin: 0;
-				margin-bottom: 25px;
+				margin-bottom: 10px;
 			}
 			h5 {
 				color: $color-blue-dark;
 				font-size: 20px;
 				font-weight: 700;
 				margin: 0;
-				margin-bottom: 25px;
+				margin-bottom: 10px;
 			}
 			span {
 				color: #ffffff;
@@ -85,14 +85,14 @@
 				font-weight: 700;
 				margin: 0;
 				color: $color-blue-dark;
-				margin-bottom: 30px;
+				margin-bottom: 10px;
 			}
 			h5 {
 				font-size: 20px;
 				font-weight: 500;
 				margin: 0;
 				color: $color-text;
-				margin-bottom: 30px;
+				margin-bottom: 10px;
 			}
 			p {
 				font-size: 20px;

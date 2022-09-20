@@ -1,5 +1,4 @@
 import Image from "next/image";
-import editImg from "../../../public/img/edit-img.png";
 import iconImg from "../../../public/img/icon.png";
 
 const ExperienceCvCandidato = () => {
@@ -52,7 +51,7 @@ const ExperienceCvCandidato = () => {
 						</div>
 					</article>
 
-					<article className="experience-item">
+					<article className="experience-item experience-item-last">
 						<div className="icon">
 							{" "}
 							<Image src={iconImg} />
@@ -78,7 +77,7 @@ const ExperienceCvCandidato = () => {
 			<div className="experience-cv-education">
 				<h2>Educación</h2>
 				<div className="cv-experience-items">
-					<article className="experience-item">
+					<article className="experience-item experience-item-last">
 						<div className="icon">
 							{" "}
 							<Image src={iconImg} />

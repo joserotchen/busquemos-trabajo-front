@@ -7,6 +7,7 @@
 	h1 {
 		margin: 0;
 		margin-top: 50px;
+		margin-bottom: 60px;
 		color: $color-blue-dark;
 		font-size: 35px;
 		font-weight: 700;
@@ -15,12 +16,11 @@
 
 .crear-oferta-publicar {
 	width: 100%;
-	height: 950px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 70px;
+
 	h2 {
 		color: $color-blue-dark;
 		font-family: inherit;
@@ -48,4 +48,13 @@
 	align-items: center;
 	height: 100%;
 	width: 100%;
+	h2 {
+		margin: 0;
+		margin-top: 90px;
+		margin-bottom: 70px;
+	}
+	button {
+		margin: 0;
+		margin-top: 100px;
+	}
 }
