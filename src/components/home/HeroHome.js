@@ -2,7 +2,7 @@ import Image from "next/image";
 import heroImage from "../../../public/img/img-hero-home.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import { faCircleArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faComputerMouse } from "@fortawesome/free-solid-svg-icons";
 
 const HeroHome = () => {
 	return (
@@ -35,7 +35,7 @@ const HeroHome = () => {
 				</div>
 			</div>
 			<a className="arrow-hero" href="#jobs-home">
-				<FontAwesomeIcon icon={faCircleArrowDown} />
+				<FontAwesomeIcon icon={faComputerMouse} />
 			</a>
 		</section>
 	);

@@ -10,6 +10,11 @@ header {
 	z-index: 50000;
 }
 
+.header-scroll {
+	border: 1px solid #ecf0f3;
+	box-shadow: 0 1px 10px 0px #9595952e;
+}
+
 .header-container {
 	width: 100%;
 	display: flex;
