@@ -2769,16 +2769,93 @@ footer p {
 .postulantes-form div input:focus {
   outline: none;
 }
-.postulantes-form select {
-  width: 25%;
-  height: 80%;
-  border: none;
-  border-radius: 61px;
+.postulantes-form .dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  min-width: 25%;
+}
+.postulantes-form .dropdown:hover {
+  cursor: pointer;
+}
+.postulantes-form .dropdown > a,
+.postulantes-form .dropdown > button {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
   background-color: transparent;
+  border: none;
+  padding: 6px 20px 6px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  color: #406882;
+  text-decoration: none;
+  width: 100%;
   font-size: 20px;
   font-weight: 500;
   color: #707070;
-  padding: 1rem;
+}
+.postulantes-form .dropdown > a:before,
+.postulantes-form .dropdown > button:before {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  content: "";
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #707070;
+}
+.postulantes-form .dropdown input[type=checkbox] {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  opacity: 0;
+}
+.postulantes-form .dropdown input[type=checkbox]:checked {
+  position: fixed;
+  z-index: 0;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.postulantes-form .dropdown ul {
+  position: absolute;
+  top: 45px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  left: 0px;
+  list-style: none;
+  padding: 4px 0px;
+  display: none;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.175);
+  width: 100%;
+}
+.postulantes-form .dropdown input[type=checkbox]:checked + ul {
+  display: block;
+}
+.postulantes-form .dropdown ul li {
+  display: block;
+  padding: 6px 20px;
+  white-space: nowrap;
+  min-width: 100px;
+  color: #707070;
+}
+.postulantes-form .dropdown ul li:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.postulantes-form .dropdown ul li a {
+  text-decoration: none;
+  display: block;
+  color: #406882;
 }
 .postulantes-form select:focus {
   outline: none;
@@ -2817,14 +2894,86 @@ footer p {
   font-size: 20px;
   font-weight: 600;
 }
-.postulantes-cards-nav select {
-  color: #406882;
+.postulantes-cards-nav .dropdown {
+  position: relative;
+  display: inline-block;
   font-family: inherit;
   font-size: 20px;
   font-weight: 500;
-  border: none;
+}
+.postulantes-cards-nav .dropdown:hover {
+  cursor: pointer;
+}
+.postulantes-cards-nav .dropdown > a,
+.postulantes-cards-nav .dropdown > button {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
   background-color: transparent;
-  padding: 1rem;
+  border: none;
+  padding: 6px 20px 6px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  color: #406882;
+  text-decoration: none;
+}
+.postulantes-cards-nav .dropdown > a:before,
+.postulantes-cards-nav .dropdown > button:before {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  content: "";
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #406882;
+}
+.postulantes-cards-nav .dropdown input[type=checkbox] {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  opacity: 0;
+}
+.postulantes-cards-nav .dropdown input[type=checkbox]:checked {
+  position: fixed;
+  z-index: 0;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.postulantes-cards-nav .dropdown ul {
+  position: absolute;
+  top: 18px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  left: 0px;
+  list-style: none;
+  padding: 4px 0px;
+  display: none;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.175);
+}
+.postulantes-cards-nav .dropdown input[type=checkbox]:checked + ul {
+  display: block;
+}
+.postulantes-cards-nav .dropdown ul li {
+  display: block;
+  padding: 6px 20px;
+  white-space: nowrap;
+  min-width: 100px;
+}
+.postulantes-cards-nav .dropdown ul li:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.postulantes-cards-nav .dropdown ul li a {
+  text-decoration: none;
+  display: block;
+  color: #406882;
 }
 
 .postulantes-cards-cards {
