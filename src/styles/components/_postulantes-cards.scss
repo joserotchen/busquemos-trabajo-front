@@ -1,9 +1,11 @@
 .postulantes-cards {
 	width: 100%;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-top: 60px;
 }
 
 .postulantes-cards-nav {
@@ -11,7 +13,6 @@
 	width: 1233px;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 60px;
 	h3 {
 		color: $color-blue-dark;
 		font-family: Poppins;
@@ -130,15 +131,15 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 40px 60px;
+	padding: 40px 40px;
 	h3 {
 		margin: 0;
 		color: $color-blue-dark;
 		font-family: inherit;
 		font-size: 22px;
 		font-weight: 700;
-		margin-top: 30px;
-		margin-bottom: 25px;
+		margin-top: 20px;
+		margin-bottom: 15px;
 	}
 	h5 {
 		margin: 0;
@@ -146,14 +147,14 @@
 		font-family: inherit;
 		font-size: 22px;
 		font-weight: 400;
-		margin-bottom: 60px;
+		margin-bottom: 25px;
 	}
 	div {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
-		margin-bottom: 55px;
+		margin-bottom: 40px;
 		span {
 			margin: 0;
 			color: $color-blue;

@@ -2883,10 +2883,12 @@ footer p {
 
 .postulantes-cards {
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
 }
 
 .postulantes-cards-nav {
@@ -2894,7 +2896,6 @@ footer p {
   width: 1233px;
   justify-content: space-between;
   align-items: center;
-  margin-top: 60px;
 }
 .postulantes-cards-nav h3 {
   color: #1a374d;
@@ -3004,7 +3005,7 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 60px;
+  padding: 40px 40px;
 }
 .card-postulante h3 {
   margin: 0;
@@ -3012,8 +3013,8 @@ footer p {
   font-family: inherit;
   font-size: 22px;
   font-weight: 700;
-  margin-top: 30px;
-  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 .card-postulante h5 {
   margin: 0;
@@ -3021,14 +3022,14 @@ footer p {
   font-family: inherit;
   font-size: 22px;
   font-weight: 400;
-  margin-bottom: 60px;
+  margin-bottom: 25px;
 }
 .card-postulante div {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-bottom: 55px;
+  margin-bottom: 40px;
 }
 .card-postulante div span {
   margin: 0;
