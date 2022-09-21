@@ -2538,10 +2538,7 @@ footer p {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   border-radius: 30px;
   margin-bottom: -200px;
-  padding-top: 20px;
-  padding-left: 90px;
-  padding-bottom: 50px;
-  padding-right: 20px;
+  padding: 40px 95px;
 }
 
 .profile-cv-contact-edit {
@@ -2560,12 +2557,13 @@ footer p {
   font-weight: 700;
   color: #707070;
   margin: 0;
+  margin-bottom: 10px;
 }
 .profile-cv-contact-info span {
   color: #707070;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .profile-cv-contact-info span button {
   width: 96px;
@@ -2578,14 +2576,14 @@ footer p {
   font-size: 17px;
   font-weight: 400;
   font-family: inherit;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .profile-cv-contact-download {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .profile-cv-contact-download button {
   width: 241px;
