@@ -2882,7 +2882,7 @@ footer p {
 }
 
 .postulantes-cards {
-  width: 100%;
+  width: 1233px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -2986,12 +2986,15 @@ footer p {
 }
 
 .postulantes-cards-cards {
+  width: 1233px;
   margin-top: 60px;
   display: grid;
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 60px;
   column-gap: 20px;
+  row-gap: 40px;
+  justify-items: center;
+  align-items: center;
   justify-items: center;
   align-items: center;
 }
