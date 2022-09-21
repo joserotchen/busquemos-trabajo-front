@@ -1,0 +1,92 @@
+.preguntas-frecuentes {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	h1 {
+		color: $color-blue-dark;
+		font-size: 35px;
+		font-weight: 700;
+		margin: 0;
+		margin-bottom: 30px;
+	}
+	h2 {
+		color: $color-text;
+		font-size: 18px;
+		font-weight: 400;
+		margin: 0;
+		margin-bottom: 80px;
+	}
+}
+
+.faq {
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	h5 {
+		margin: 0;
+		color: $color-blue;
+		font-family: inherit;
+		font-size: 20px;
+		font-weight: 600;
+	}
+	p {
+		color: $color-text;
+		font-family: inherit;
+		font-size: 18px;
+		font-weight: 400;
+	}
+}
+
+// Acordeon
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+	background-color: #fff;
+	cursor: pointer;
+	padding: 18px;
+	width: 867px;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+	background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+	padding: 0 18px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
+	width: 867px;
+}
+
+.accordion:after {
+	content: "+"; /* Unicode character for "plus" sign (+) */
+	font-size: 25px;
+	font-weight: 100;
+	color: #134563;
+	float: right;
+	margin-left: 5px;
+	border: solid 1px #134563;
+	border-radius: 50%;
+	height: 25px;
+	width: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.active:after {
+	content: "-"; /* Unicode character for "minus" sign (-) */
+}

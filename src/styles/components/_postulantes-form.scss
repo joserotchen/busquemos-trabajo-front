@@ -1,0 +1,150 @@
+.postulantes-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1233px;
+	height: 83px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	border-radius: 61px;
+	gap: 20px;
+	padding: 0 10px;
+	.separator {
+		height: 60%;
+		width: 1px;
+		background-color: $color-text;
+	}
+	div {
+		width: 25%;
+		height: 80%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		input {
+			height: 100%;
+			width: 90%;
+			border: none;
+			border-radius: 61px;
+			font-size: 20px;
+			font-weight: 500;
+			color: $color-text;
+			padding: 0 10px;
+		}
+		input:focus {
+			outline: none;
+		}
+	}
+	// Dropdown
+	.dropdown {
+		position: relative;
+		display: inline-block;
+		font-family: inherit;
+		font-size: 20px;
+		font-weight: 500;
+
+		min-width: 25%;
+	}
+	.dropdown:hover {
+		cursor: pointer;
+	}
+	.dropdown > a,
+	.dropdown > button {
+		font-family: inherit;
+		font-size: 20px;
+		font-weight: 500;
+		background-color: transparent;
+		border: none;
+		padding: 6px 20px 6px 10px;
+		border-radius: 4px;
+		display: inline-block;
+		color: $color-blue;
+		text-decoration: none;
+		width: 100%;
+		font-size: 20px;
+		font-weight: 500;
+		color: $color-text;
+	}
+
+	.dropdown > a:before,
+	.dropdown > button:before {
+		position: absolute;
+		right: 0px;
+		top: 20px;
+		content: "";
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid $color-text;
+	}
+
+	.dropdown input[type="checkbox"] {
+		position: absolute;
+		display: block;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		margin: 0px;
+		opacity: 0;
+	}
+
+	.dropdown input[type="checkbox"]:checked {
+		position: fixed;
+		z-index: +0;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+	}
+
+	.dropdown ul {
+		position: absolute;
+		top: 45px;
+		border: 1px solid #ccc;
+		border-radius: 10px;
+		left: 0px;
+		list-style: none;
+		padding: 4px 0px;
+		display: none;
+		background-color: white;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.175);
+		width: 100%;
+	}
+
+	.dropdown input[type="checkbox"]:checked + ul {
+		display: block;
+	}
+
+	.dropdown ul li {
+		display: block;
+		padding: 6px 20px;
+		white-space: nowrap;
+		min-width: 100px;
+		color: $color-text;
+	}
+
+	.dropdown ul li:hover {
+		background-color: #f5f5f5;
+		cursor: pointer;
+	}
+
+	.dropdown ul li a {
+		text-decoration: none;
+		display: block;
+		color: $color-blue;
+	}
+	select:focus {
+		outline: none;
+	}
+	button {
+		width: 25%;
+		height: 80%;
+		border: none;
+		border-radius: 61px;
+		background-color: transparent;
+		font-size: 20px;
+		font-weight: 500;
+		color: #ffff;
+		cursor: pointer;
+		background-color: #406882;
+	}
+}

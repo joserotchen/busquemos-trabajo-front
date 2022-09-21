@@ -1,0 +1,37 @@
+.hidden {
+	visibility: hidden;
+}
+
+.container {
+	width: 100vw;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	flex-grow: 1;
+	padding-top: 80px;
+}
+
+.container-home {
+	width: 100vw;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	flex-grow: 1;
+}
+
+.content-container {
+	width: 90%;
+	max-width: 1344px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.scroll-hidden {
+	overflow: hidden;
+}

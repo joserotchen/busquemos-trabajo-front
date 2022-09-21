@@ -1,0 +1,153 @@
+.crear-oferta-informacion {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	h1 {
+		margin: 0;
+		margin-top: 50px;
+		margin-bottom: 60px;
+		color: $color-blue-dark;
+		font-size: 35px;
+		font-weight: 700;
+	}
+}
+
+.crear-oferta-informacion-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	h2 {
+		color: $color-blue-dark;
+		font-size: 24px;
+		font-weight: 700;
+	}
+	form {
+		width: 660px;
+		margin-left: 150px;
+		margin-top: 60px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 20px;
+
+		.doble-input {
+			width: 100%;
+			display: flex;
+			gap: 30px;
+			input {
+				width: 100%;
+				height: 40px;
+			}
+		}
+		label {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			color: $color-text;
+			font-size: 20px;
+			font-weight: 500;
+			gap: 10px;
+		}
+		input {
+			width: 100%;
+			height: 40px;
+			border-radius: 8px;
+			border: 2px solid $color-blue;
+			color: $color-text;
+			font-family: inherit;
+			font-size: 20px;
+			font-weight: 400;
+			padding: 0 1rem;
+		}
+		input:focus {
+			border: 3px solid $color-blue;
+			outline: none;
+		}
+		select {
+			width: 100%;
+			height: 40px;
+			border-radius: 8px;
+			border: 2px solid $color-blue;
+			color: $color-text;
+			font-family: inherit;
+			background-color: #fff;
+			font-size: 20px;
+		}
+		select:focus {
+			border: 3px solid $color-blue;
+			outline: none;
+		}
+		textarea {
+			width: 100%;
+			height: 150px;
+			resize: none;
+			border-radius: 8px;
+			font-family: inherit;
+			font-size: 20px;
+			color: $color-text;
+			padding: 0 1rem;
+			border: solid 2px $color-blue;
+		}
+		textarea:focus {
+			border: 3px solid $color-blue;
+			outline: none;
+		}
+
+		.no-mostrar-salario {
+			display: flex;
+			flex-direction: row;
+			gap: 0;
+			justify-content: flex-start;
+			align-items: center;
+			width: 100%;
+			gap: 10px;
+			font-size: 18px;
+			font-weight: 500;
+			input {
+				width: 29px;
+				height: 29px;
+				border-radius: 8px;
+			}
+		}
+	}
+}
+
+// BOTONES FORM
+
+.btns-form {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 70px;
+	.cancelar {
+		width: 148px;
+		height: 60px;
+		border-radius: 10px;
+		background-color: $color-text;
+		color: #ffffff;
+		font-family: inherit;
+		font-size: 18px;
+		font-weight: 500;
+		border: none;
+		cursor: pointer;
+	}
+	.guardar {
+		border: none;
+		cursor: pointer;
+		color: #ffffff;
+		width: 251px;
+		height: 60px;
+		border-radius: 10px;
+		background-color: $color-blue;
+		font-size: 18px;
+		font-weight: 500;
+		font-family: inherit;
+	}
+}

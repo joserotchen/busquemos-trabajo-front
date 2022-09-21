@@ -1,0 +1,181 @@
+.postulantes-cards {
+	width: 1233px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 60px;
+}
+
+.postulantes-cards-nav {
+	display: flex;
+	width: 1233px;
+	justify-content: space-between;
+	align-items: center;
+	h3 {
+		color: $color-blue-dark;
+		font-family: Poppins;
+		font-size: 20px;
+		font-weight: 600;
+	}
+	// Dropdown
+	.dropdown {
+		position: relative;
+		display: inline-block;
+		font-family: inherit;
+		font-size: 20px;
+		font-weight: 500;
+	}
+	.dropdown:hover {
+		cursor: pointer;
+	}
+	.dropdown > a,
+	.dropdown > button {
+		font-family: inherit;
+		font-size: 20px;
+		font-weight: 500;
+		background-color: transparent;
+		border: none;
+		padding: 6px 20px 6px 10px;
+		border-radius: 4px;
+		display: inline-block;
+		color: $color-blue;
+		text-decoration: none;
+	}
+
+	.dropdown > a:before,
+	.dropdown > button:before {
+		position: absolute;
+		right: 0px;
+		top: 20px;
+		content: "";
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid $color-blue;
+	}
+
+	.dropdown input[type="checkbox"] {
+		position: absolute;
+		display: block;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		margin: 0px;
+		opacity: 0;
+	}
+
+	.dropdown input[type="checkbox"]:checked {
+		position: fixed;
+		z-index: +0;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+	}
+
+	.dropdown ul {
+		position: absolute;
+		top: 18px;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		left: 0px;
+		list-style: none;
+		padding: 4px 0px;
+		display: none;
+		background-color: white;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.175);
+	}
+
+	.dropdown input[type="checkbox"]:checked + ul {
+		display: block;
+	}
+
+	.dropdown ul li {
+		display: block;
+		padding: 6px 20px;
+		white-space: nowrap;
+		min-width: 100px;
+	}
+
+	.dropdown ul li:hover {
+		background-color: #f5f5f5;
+		cursor: pointer;
+	}
+
+	.dropdown ul li a {
+		text-decoration: none;
+		display: block;
+		color: $color-blue;
+	}
+}
+
+.postulantes-cards-cards {
+	width: 1233px;
+	margin-top: 60px;
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 20px;
+	row-gap: 40px;
+	justify-items: center;
+	align-items: center;
+	justify-items: center;
+	align-items: center;
+}
+
+.card-postulante {
+	width: 398px;
+	height: 536px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 40px;
+	h3 {
+		margin: 0;
+		color: $color-blue-dark;
+		font-family: inherit;
+		font-size: 22px;
+		font-weight: 700;
+		margin-top: 20px;
+		margin-bottom: 15px;
+	}
+	h5 {
+		margin: 0;
+		color: $color-text;
+		font-family: inherit;
+		font-size: 22px;
+		font-weight: 400;
+		margin-bottom: 25px;
+	}
+	div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		margin-bottom: 40px;
+		span {
+			margin: 0;
+			color: $color-blue;
+			font-family: inherit;
+			font-size: 22px;
+			font-weight: 400;
+		}
+	}
+	button {
+		width: 160px;
+		height: 53px;
+		background-color: $color-blue;
+		color: #ffff;
+		font-family: inherit;
+		cursor: pointer;
+		font-size: 22px;
+		font-weight: 400;
+		border: none;
+		border-radius: 60px;
+	}
+}

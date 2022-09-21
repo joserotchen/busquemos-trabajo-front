@@ -1,0 +1,44 @@
+.crear-oferta-nav {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+
+	.a-active {
+		color: $color-blue;
+		div {
+			background-color: $color-blue;
+		}
+	}
+	a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		color: $color-text;
+		font-size: 18px;
+		font-weight: 700;
+		div {
+			width: 54px;
+			height: 54px;
+			background-color: $color-text;
+			color: #ffffff;
+			font-family: inherit;
+			font-size: 18px;
+			font-weight: 700;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			margin-right: 20px;
+		}
+		.icon {
+			background-color: transparent;
+			width: 10px;
+			height: 10px;
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+	}
+}

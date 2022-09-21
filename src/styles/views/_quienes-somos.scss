@@ -1,0 +1,32 @@
+.quienes-somos {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	h1 {
+		color: $color-blue-dark;
+		font-size: 35px;
+		font-weight: 700;
+		margin: 0;
+	}
+}
+
+.quienes-somos-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 125px;
+	div {
+		width: 50%;
+		margin: 0;
+	}
+	p {
+		width: 50%;
+		margin: 0;
+		color: $color-text;
+		font-size: 18px;
+		font-weight: 400;
+	}
+}

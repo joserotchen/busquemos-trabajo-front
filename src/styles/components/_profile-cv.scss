@@ -1,0 +1,232 @@
+.profile-cv {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 80px;
+	gap: 90px;
+}
+
+.profile-cv-info {
+	width: 55%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.profile-cv-info-main {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 120px;
+	article {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
+	}
+}
+
+.profile-cv-info-main-photo {
+	width: 129px;
+	height: 129px;
+}
+
+.profile-cv-info-main-title {
+	h2 {
+		font-size: 41px;
+		font-weight: 700;
+		color: $color-blue-dark;
+		margin: 0;
+	}
+	h5 {
+		font-size: 20px;
+		font-weight: 400;
+		margin: 0;
+		color: $color-text;
+	}
+}
+
+.edit-btn {
+	width: 125px;
+	height: 46px;
+	border: none;
+	border-radius: 30px;
+	background-color: $color-blue-dark;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+	svg {
+		font-size: 1rem;
+	}
+}
+
+.profile-cv-info-bio {
+	margin-top: 50px;
+	p {
+		font-size: 20px;
+		font-weight: 400;
+		color: $color-text;
+		margin: 0;
+	}
+}
+
+.profile-cv-info-skills {
+	margin-top: 50px;
+	h4 {
+		margin: 0;
+		font-size: 20px;
+		font-weight: 600;
+		color: $color-blue;
+		margin-bottom: 40px;
+	}
+	.container-skills {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-end;
+		margin: 0;
+		gap: 0;
+	}
+	div {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		gap: 5px;
+		width: 500px;
+		span {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			padding-left: 20px;
+			padding-right: 7px;
+			height: 38px;
+			border-radius: 40px;
+			background-color: $color-blue;
+			gap: 10px;
+			color: #ffffff;
+			margin: 0;
+			svg {
+				color: $color-blue;
+			}
+			button {
+				background-color: #ffffff;
+				border: none;
+				border-radius: 50%;
+				cursor: pointer;
+				font-family: inherit;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 0;
+				width: 30px;
+				height: 30px;
+			}
+		}
+	}
+}
+
+.add-tag-btn {
+	width: 200px;
+	height: 38px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 400;
+	border: solid 1px $color-blue-dark;
+	color: $color-blue-dark;
+	cursor: pointer;
+	font-family: inherit;
+	border-radius: 40px;
+	background-color: #ffffff;
+	gap: 4px;
+	svg {
+		color: $color-blue;
+	}
+}
+
+// Profile Contact
+
+.profile-cv-contact {
+	width: 468px;
+	height: 484px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	border-radius: 30px;
+	margin-bottom: -200px;
+	padding: 40px 95px;
+	padding-top: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	position: relative;
+}
+
+.profile-cv-contact-edit {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+.profile-cv-contact-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	h4 {
+		font-size: 22px;
+		font-weight: 700;
+		color: $color-text;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	span {
+		color: $color-text;
+		font-size: 22px;
+		font-weight: 400;
+		margin: 0;
+		margin-bottom: 20px;
+		button {
+			width: 96px;
+			height: 35px;
+			border-radius: 31px;
+			background-color: $color-blue;
+			color: #ffffff;
+			border: none;
+			cursor: pointer;
+			font-size: 17px;
+			font-weight: 400;
+			font-family: inherit;
+			margin-left: 20px;
+		}
+	}
+}
+
+.profile-cv-contact-download {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	width: 100%;
+	height: 100%;
+	button {
+		width: 241px;
+		height: 52px;
+		border-radius: 31px;
+		background-color: $color-blue;
+		color: #ffffff;
+		border: none;
+		cursor: pointer;
+		font-size: 22px;
+		font-weight: 400;
+		font-family: inherit;
+	}
+}
